@@ -917,7 +917,6 @@ PRODUCT_PACKAGES += \
     ai_engine-default.xml \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.cas@1.2-service.xml \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.gatekeeper@1.0-service.trusty.xml \
     android.hardware.health-service.example.xml \
     android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
