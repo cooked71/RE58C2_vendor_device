@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     vendor/realme/RE58C2/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RE58C2/proprietary/etc/temperature_profile/sys_high_temperature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/temperature_profile/sys_high_temperature.xml \
-    vendor/realme/RE58C2/proprietary/files-all.txt:$(TARGET_COPY_OUT_SYSTEM)/files-all.txt \
     vendor/realme/RE58C2/proprietary/lib/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmedia_codeclist.so \
     vendor/realme/RE58C2/proprietary/lib/libois_algorithm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libois_algorithm_jni.so \
     vendor/realme/RE58C2/proprietary/lib/libremotedisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libremotedisplay.so \
@@ -349,7 +348,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/odm/etc/otpdata/spw_input_parameters_values_planar.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/spw_input_parameters_values_planar.txt \
     vendor/realme/RE58C2/proprietary/odm/etc/sensor_config.xml:$(TARGET_COPY_OUT_ODM)/etc/sensor_config.xml \
     vendor/realme/RE58C2/proprietary/odm/etc/unipnp/UniFeature.xml:$(TARGET_COPY_OUT_ODM)/etc/unipnp/UniFeature.xml \
-    vendor/realme/RE58C2/proprietary/odm/etc/vintf/manifest_nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_nfc.xml \
     vendor/realme/RE58C2/proprietary/odm/etc/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi_board_config.ini \
     vendor/realme/RE58C2/proprietary/odm/etc/wifi_board_config_aa.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi_board_config_aa.ini \
     vendor/realme/RE58C2/proprietary/odm/etc/wifi_board_config_hulk.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi_board_config_hulk.ini \
@@ -501,7 +499,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
@@ -538,7 +535,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/network-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/network-default.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/phasecheckserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/phasecheckserver.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/power.stats-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power.stats-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/rebootescrow-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-default.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/refnotify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/refnotify.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/remosaic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/remosaic.rc \
     vendor/realme/RE58C2/proprietary/vendor/etc/init/rpmbserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rpmbserver.rc \
@@ -922,7 +918,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
     android.hardware.sensors-multihal.xml \
     android.hardware.thermal@2.0-service.xml \
-    android.hardware.usb-service.example.xml \
     android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
     android.hardware.wifi@1.0-service.xml \
@@ -939,7 +934,6 @@ PRODUCT_PACKAGES += \
     memtrack.xml \
     network-default.xml \
     power.stats-default.xml \
-    rebootescrow-default.xml \
     soter_default.xml \
     trusty-default.xml \
     tui-default.xml \
