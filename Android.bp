@@ -211,6 +211,158 @@ prebuilt_etc_xml {
 // ---------------------------------------------------------------------------
 
 prebuilt_etc_xml {
+	name: "memtrack.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/memtrack.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "network-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/network-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "power.stats-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/power.stats-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+// prebuilt_etc_xml {
+//	name: "rebootescrow-default.xml",
+//	owner: "realme",
+//	src: "proprietary/vendor/etc/vintf/manifest/rebootescrow-default.xml",
+//	filename_from_src: true,
+//	sub_dir: "vintf/manifest",
+//	soc_specific: true,
+// }
+
+prebuilt_etc_xml {
+	name: "soter_default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/soter_default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "trusty-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/trusty-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "tui-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/tui-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor-fingerprintmmi-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor-fingerprintmmi-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor-log-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor-log-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor-oemlock-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor-oemlock-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor-power-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor-power-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.sprd.hardware.boot@1.2.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.sprd.hardware.commondcs@1.0-service.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.commondcs@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.sprd.hardware.gnss@2.2-service.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.gnss@2.2-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.sprd.hardware.thermal@2.0-service.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.thermal@2.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vibrator.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vibrator.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_kernel.xml",
+	owner: "realme",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_kernel.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+prebuilt_etc_xml {
     name: "manifest.vendor.nxpnfclegacy.xml",
     src: "proprietary/vendor/etc/vintf/manifest.vendor.nxpnfclegacy.xml",
     sub_dir: "vintf",
