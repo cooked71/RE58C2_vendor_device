@@ -396,4 +396,84 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	device_specific: true,
 }
+prebuilt_etc_xml {
+    name: "manifest.vendor.nxpnfclegacy.xml",
+    src: "proprietary/vendor/etc/vintf/manifest.vendor.nxpnfclegacy.xml",
+    sub_dir: "vintf",
+    installable: true,
+}
+prebuilt_etc_xml {
+    name: "manifest.vendor.nxp.eventprocessor.xml",
+    src: "proprietary/vendor/etc/vintf/manifest.vendor.nxp.eventprocessor.xml",
+    sub_dir: "vintf",
+    installable: true,
+}
+prebuilt_etc_xml {
+    name: "manifest.vendor.sprd.hardware.commondcs.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest.vendor.sprd.hardware.commondcs.xml",
+    sub_dir: "vintf",
+    installable: true,
+}
+prebuilt_etc {
+    name: "manifest.vendor.oppo.engnative.engineer.xml",
+    src: "proprietary/vendor/etc/vintf/manifest.vendor.oppo.engnative.engineer.xml",
+    sub_dir: "vintf",
+    installable: true,
+}
+prebuilt_binary {
+    name: "vendor.oppo.engnative.engineer@1.0-service",
+    src: "bin/hw/vendor.oppo.engnative.engineer@1.0-service",
+    init_rc: ["etc/init/vendor.oppo.engnative.engineer.rc"],
+    vendor: true,
+}
+// vendor.oppo.engnative.engineer@1.0-service binary with init.rc
+prebuilt_binary {
+    name: "vendor.oppo.engnative.engineer@1.0-service",
+    src: "bin/hw/vendor.oppo.engnative.engineer@1.0-service",
+    init_rc: ["etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
+    vendor: true,
+}
 
+// vendor.sprd.hardware.commondcs@1.0-service binary with init.rc
+prebuilt_binary {
+    name: "vendor.sprd.hardware.commondcs@1.0-service",
+    src: "bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
+    init_rc: ["etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
+    vendor: true,
+}
+
+// vendor.nxp.eventprocessor@1.0.so shared library (no init.rc)
+prebuilt_shared_library {
+    name: "vendor.nxp.eventprocessor@1.0",
+    src: "lib64/vendor/lib64/vendor.nxp.eventprocessor@1.0.so",
+    vendor: true,
+    stl: "none",
+    sdk_version: "current",
+}
+
+// vendor.nxp.nxpnfclegacy@1.0.so shared library (no init.rc)
+prebuilt_shared_library {
+    name: "vendor.nxp.nxpnfclegacy@1.0",
+    src: "lib64/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so",
+    vendor: true,
+    stl: "none",
+    sdk_version: "current",
+}
+
+// vendor.oppo.engnative.engineer@1.0.so shared library (no init.rc)
+prebuilt_shared_library {
+    name: "vendor.oppo.engnative.engineer@1.0",
+    src: "lib64/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so",
+    vendor: true,
+    stl: "none",
+    sdk_version: "current",
+}
+
+// vendor.sprd.hardware.commondcs@1.0.so shared library (no init.rc)
+prebuilt_shared_library {
+    name: "vendor.sprd.hardware.commondcs@1.0",
+    src: "lib64/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so",
+    vendor: true,
+    stl: "none",
+    sdk_version: "current",
+}
