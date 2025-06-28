@@ -414,20 +414,20 @@ prebuilt_etc_xml {
     sub_dir: "vintf",
     installable: true,
 }
-prebuilt_etc {
+prebuilt_etc_xml {
     name: "manifest.vendor.oppo.engnative.engineer.xml",
     src: "proprietary/vendor/etc/vintf/manifest.vendor.oppo.engnative.engineer.xml",
     sub_dir: "vintf",
     installable: true,
 }
-prebuilt_binary {
+prebuilt_etc {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     src: "bin/hw/vendor.oppo.engnative.engineer@1.0-service",
     init_rc: ["etc/init/vendor.oppo.engnative.engineer.rc"],
     vendor: true,
 }
 // vendor.oppo.engnative.engineer@1.0-service binary with init.rc
-prebuilt_binary {
+prebuilt_etc {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     src: "bin/hw/vendor.oppo.engnative.engineer@1.0-service",
     init_rc: ["etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
@@ -435,7 +435,7 @@ prebuilt_binary {
 }
 
 // vendor.sprd.hardware.commondcs@1.0-service binary with init.rc
-prebuilt_binary {
+prebuilt_etc {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
     src: "bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
     init_rc: ["etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
@@ -443,7 +443,7 @@ prebuilt_binary {
 }
 
 // vendor.nxp.eventprocessor@1.0.so shared library (no init.rc)
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     src: "lib64/vendor/lib64/vendor.nxp.eventprocessor@1.0.so",
     vendor: true,
@@ -452,7 +452,7 @@ prebuilt_shared_library {
 }
 
 // vendor.nxp.nxpnfclegacy@1.0.so shared library (no init.rc)
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "vendor.nxp.nxpnfclegacy@1.0",
     src: "lib64/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so",
     vendor: true,
@@ -461,7 +461,7 @@ prebuilt_shared_library {
 }
 
 // vendor.oppo.engnative.engineer@1.0.so shared library (no init.rc)
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
     src: "lib64/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so",
     vendor: true,
@@ -470,7 +470,7 @@ prebuilt_shared_library {
 }
 
 // vendor.sprd.hardware.commondcs@1.0.so shared library (no init.rc)
-prebuilt_shared_library {
+prebuilt_cc_prebuilt_library_sharedshared_library {
     name: "vendor.sprd.hardware.commondcs@1.0",
     src: "lib64/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so",
     vendor: true,
