@@ -440,6 +440,44 @@ cc_prebuilt_binary {
 // Prebuilt shared libraries
 // ---------------------------------------------------------------------------
 
+
+cc_prebuilt_library_shared {
+    name: "librpmbclient",
+    arch: {
+        arm64: {
+            srcs: ["proprietary/vendor/lib64/librpmbclient.so"],
+        },
+    },
+    strip: { none: true },
+    stl: "none",
+    compile_multilib: "64",
+}
+
+cc_prebuilt_library_shared {
+    name: "libteeproduction",
+    arch: {
+        arm64: {
+            srcs: ["proprietary/vendor/lib64/libteeproduction.so"],
+        },
+    },
+    strip: { none: true },
+    stl: "none",
+    compile_multilib: "64",
+}
+
+cc_prebuilt_library_shared {
+    name: "libsecrpmbdata",
+    arch: {
+        arm64: {
+            srcs: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
+        },
+    },
+    strip: { none: true },
+    stl: "none",
+    compile_multilib: "64",
+}
+
+
 cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     srcs: ["proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
