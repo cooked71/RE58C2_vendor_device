@@ -242,18 +242,22 @@ prebuilt_etc_xml {
 // Prebuilt binaries with init.rc
 // ---------------------------------------------------------------------------
 
-prebuilt_etc {
+cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
-    src: "proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service",
+    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
     init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
     vendor: true,
+    stl: "none",
+    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
 }
 
-prebuilt_etc {
+cc_prebuilt_binary {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
-    src: "proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
+    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
     init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
     vendor: true,
+    stl: "none",
+   shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
 }
 
 // ---------------------------------------------------------------------------
