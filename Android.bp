@@ -421,6 +421,7 @@ cc_prebuilt_library_shared {
     srcs: ["proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
     vendor: true,
     stl: "none",
+    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     sdk_version: "current",
 }
 
@@ -428,6 +429,7 @@ cc_prebuilt_library_shared {
     name: "vendor.nxp.nxpnfclegacy@1.0",
     srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
     vendor: true,
+    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     stl: "none",
     sdk_version: "current",
 }
@@ -436,6 +438,7 @@ cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
     srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     vendor: true,
+    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     stl: "none",
     sdk_version: "current",
 }
@@ -444,6 +447,7 @@ cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.commondcs@1.0",
     srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
     vendor: true,
+    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     stl: "none",
     sdk_version: "current",
 }
