@@ -424,7 +424,7 @@ prebuilt_etc_xml {
 prebuilt_etc {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     src: "proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service",
-    init_rc: ["etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
+    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
     vendor: true,
 }
 
@@ -432,14 +432,14 @@ prebuilt_etc {
 prebuilt_etc {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
     src: "proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
-    init_rc: ["etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
+    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
     vendor: true,
 }
 
 // vendor.nxp.eventprocessor@1.0.so shared library (no init.rc)
 cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
+    srcs: ["proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
     vendor: true,
     stl: "none",
     sdk_version: "current",
@@ -448,7 +448,7 @@ cc_prebuilt_library_shared {
 // vendor.nxp.nxpnfclegacy@1.0.so shared library (no init.rc)
 cc_prebuilt_library_shared {
     name: "vendor.nxp.nxpnfclegacy@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
+    srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
     vendor: true,
     stl: "none",
     sdk_version: "current",
@@ -457,7 +457,7 @@ cc_prebuilt_library_shared {
 // vendor.oppo.engnative.engineer@1.0.so shared library (no init.rc)
 cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
+    srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     vendor: true,
     stl: "none",
     sdk_version: "current",
@@ -466,7 +466,7 @@ cc_prebuilt_library_shared {
 // vendor.sprd.hardware.commondcs@1.0.so shared library (no init.rc)
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.commondcs@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
     vendor: true,
     stl: "none",
     sdk_version: "current",
