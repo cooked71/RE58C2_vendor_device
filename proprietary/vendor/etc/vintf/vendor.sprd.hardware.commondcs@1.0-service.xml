@@ -1,11 +1,12 @@
 <manifest version="1.0" type="device">
     <hal format="hidl">
-        <name>vendor.sprd.hardware.commondcs</name>
+       <name>vendor.sprd.hardware.commondcs</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>ICommonDcsHalService</name>
-            <instance>default</instance>
+            <instance>commondcsservice</instance>
         </interface>
+        <fqname>@1.0::ICommonDcsHalService/commondcsservice</fqname>
     </hal>
 </manifest>
