@@ -378,8 +378,8 @@ prebuilt_etc_xml {
 
 prebuilt_etc_xml {
     name: "manifest.vendor.sprd.hardware.commondcs.xml",
-    src: "proprietary/vendor/etc/vendor.sprd.hardware.commondcs@1.0-service.xml",
-    sub_dir: "vintf",/manif
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.commondcs@1.0-service.xml",
+    sub_dir: "vintf",
     installable: true,
 }
 
