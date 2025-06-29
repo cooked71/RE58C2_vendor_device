@@ -450,6 +450,7 @@ cc_prebuilt_library_shared {
     },
     strip: { none: true },
     stl: "none",
+    vendor: true,
     compile_multilib: "64",
 }
 
@@ -462,6 +463,7 @@ cc_prebuilt_library_shared {
     },
     strip: { none: true },
     stl: "none",
+    vendor: true,
     compile_multilib: "64",
 }
 
@@ -474,6 +476,7 @@ cc_prebuilt_library_shared {
     },
     strip: { none: true },
     stl: "none",
+    vendor: true,
     compile_multilib: "64",
 }
 
