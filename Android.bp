@@ -520,6 +520,8 @@ cc_prebuilt_library_shared {
     shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     installable: true,
     vendor: true,
+    visibility: ["//vendor/realme/RE58C2:__subpackages__"],
+    licenses: ["realme-proprietary-license"],
     stl: "none",
     sdk_version: "current",
 }
@@ -535,6 +537,14 @@ cc_prebuilt_library_shared {
     shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
     installable: true,
     vendor: true,
+    visibility: ["//vendor/realme/RE58C2:__subpackages__"],
+    licenses: ["realme-proprietary-license"],
     stl: "none",
     sdk_version: "current",
+}
+license {
+    name: "realme-proprietary-license",
+    license_kinds: ["proprietary"],
+    license_text: ["licenses/realme_proprietary_license.txt"],
+    visibility: ["//vendor/realme/RE58C2:__subpackages__"],
 }
