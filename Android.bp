@@ -511,28 +511,30 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
+    srcs: ["proprietary/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     arch: {
         arm: {
             enabled: false,  // Disable for 32-bit ARM
         },
     },
-    vendor: true,
     shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
+    installable: true,
+    vendor: true,
     stl: "none",
     sdk_version: "current",
 }
 
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.commondcs@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
+    srcs: ["proprietary/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
     arch: {
         arm: {
             enabled: false,  // Disable for 32-bit ARM
         },
     },
-    vendor: true,
     shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
+    installable: true,
+    vendor: true,
     stl: "none",
     sdk_version: "current",
 }
