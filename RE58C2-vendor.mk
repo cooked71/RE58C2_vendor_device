@@ -904,7 +904,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.1 \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so
+    vendor/realme/RE58C2/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so \
+    vendor/realme/RE58C2/proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.engineer@1.0.so \
+    vendor/realme/RE58C2/proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.commondcs@1.0.so 
+
 
 PRODUCT_PACKAGES += \
     SoterService \
