@@ -515,6 +515,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
+    owner: "oppo",
     srcs: ["proprietary/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     arch: {
         arm: {
@@ -532,6 +533,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.commondcs@1.0",
+    owner: "oppo",
     srcs: ["proprietary/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
     arch: {
         arm: {
