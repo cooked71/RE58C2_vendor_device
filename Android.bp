@@ -396,10 +396,12 @@ prebuilt_etc_xml {
 
 cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
+    owner: "oppo",
     srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
     init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
     vendor: true,
     stl: "none",
+    licenses: ["realme-proprietary-license"],
     shared_libs: [
         "libc++",
         "libcutils",
@@ -420,11 +422,13 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
+    owner: "oppo",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
     init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
     vendor: true,
     stl: "none",
- shared_libs: [
+    licenses: ["realme-proprietary-license"],
+    shared_libs: [
         "libc++",
         "libcutils",
         "libhidlbase",
