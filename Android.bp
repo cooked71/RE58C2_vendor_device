@@ -362,33 +362,7 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	device_specific: true,
 }
-prebuilt_etc_xml {
-    name: "manifest.vendor.nxpnfclegacy.xml",
-    src: "proprietary/vendor/etc/vintf/manifest.vendor.nxpnfclegacy.xml",
-    sub_dir: "vintf",
-    installable: true,
-}
 
-prebuilt_etc_xml {
-    name: "manifest.vendor.nxp.eventprocessor.xml",
-    src: "proprietary/vendor/etc/vintf/manifest.vendor.nxp.eventprocessor.xml",
-    sub_dir: "vintf",
-    installable: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest.vendor.sprd.hardware.commondcs.xml",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.commondcs@1.0-service.xml",
-    sub_dir: "vintf",
-    installable: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest.vendor.oppo.engnative.engineer.xml",
-    src: "proprietary/vendor/etc/vintf/manifest.vendor.oppo.engnative.engineer.xml",
-    sub_dir: "vintf",
-    installable: true,
-}
 
 // ---------------------------------------------------------------------------
 // Prebuilt binaries with init.rc
