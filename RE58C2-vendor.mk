@@ -905,9 +905,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.engnative.engineer@1.0.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.commondcs@1.0.so \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.commondcs@1.0-service
 
 PRODUCT_PACKAGES += \
     SoterService \
@@ -945,7 +942,6 @@ PRODUCT_PACKAGES += \
     vendor-oemlock-default.xml \
     vendor-power-default.xml \
     vendor.sprd.hardware.boot@1.2.xml \
-    vendor.sprd.hardware.commondcs@1.0-service.xml \
     vendor.sprd.hardware.gnss@2.2-service.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
