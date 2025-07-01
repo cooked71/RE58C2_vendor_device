@@ -318,14 +318,6 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.sprd.hardware.commondcs@1.0-service.xml",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.commondcs@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
 
 prebuilt_etc_xml {
 	name: "vendor.sprd.hardware.gnss@2.2-service.xml",
@@ -368,51 +360,6 @@ prebuilt_etc_xml {
 // Prebuilt binaries with init.rc
 // ---------------------------------------------------------------------------
 
-cc_prebuilt_binary {
-    name: "vendor.oppo.engnative.engineer@1.0-service",
-    owner: "oppo",
-    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
-    vendor: true,
-    stl: "none",
-    licenses: ["realme-proprietary-license"],
-    shared_libs: [
-        "libc++",
-        "libcutils",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "vendor.oppo.engnative.engineer@1.0",
-        "libbase",
-        "libdumpstateutil",
-        "libhidltransport",
-        "libhwbinder",
-        "libcrypto",
-        "librpmbclient",
-        "libteeproduction",
-        "libsecrpmbdata",
-    ],
-}
-
-cc_prebuilt_binary {
-    name: "vendor.sprd.hardware.commondcs@1.0-service",
-    owner: "oppo",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
-    vendor: true,
-    stl: "none",
-    licenses: ["realme-proprietary-license"],
-    shared_libs: [
-        "libc++",
-        "libcutils",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "libsysutils",                                      
-        "libhardware",                                      
-        "vendor.sprd.hardware.commondcs@1.0",              
-    ],
-    }
 
 // ---------------------------------------------------------------------------
 // Prebuilt shared libraries
@@ -462,69 +409,6 @@ cc_prebuilt_library_shared {
 }
 
 
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.eventprocessor@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
-    arch: {
-        arm: {
-            enabled: false,  // Disable for 32-bit ARM
-        },
-    },
-    vendor: true,
-    stl: "none",
-    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
-    sdk_version: "current",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfclegacy@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
-    arch: {
-        arm: {
-            enabled: false,  // Disable for 32-bit ARM
-        },
-    },
-    vendor: true,
-    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
-    stl: "none",
-    sdk_version: "current",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oppo.engnative.engineer@1.0",
-    owner: "oppo",
-    srcs: ["proprietary/lib64/vendor.oppo.engnative.engineer@1.0.so"],
-    arch: {
-        arm: {
-            enabled: false,  // Disable for 32-bit ARM
-        },
-    },
-    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
-    installable: true,
-    vendor: true,
-    visibility: ["//vendor/realme/RE58C2:__subpackages__"],
-    licenses: ["realme-proprietary-license"],
-    stl: "none",
-    sdk_version: "current",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.sprd.hardware.commondcs@1.0",
-    owner: "oppo",
-    srcs: ["proprietary/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
-    arch: {
-        arm: {
-            enabled: false,  // Disable for 32-bit ARM
-        },
-    },
-    shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
-    installable: true,
-    vendor: true,
-    visibility: ["//vendor/realme/RE58C2:__subpackages__"],
-    licenses: ["realme-proprietary-license"],
-    stl: "none",
-    sdk_version: "current",
-}
 license {
     name: "realme-proprietary-license",
     license_kinds: ["proprietary"],
