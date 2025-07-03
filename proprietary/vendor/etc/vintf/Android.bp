@@ -1,13 +1,22 @@
-prebuilt_vendor_file {
+prebuilt_etc {
     name: "vendor_manifest_xml",
     src: "manifest.xml",
     sub_dir: "",
     filename: "manifest.xml",
+    installable: true,
+    relative_install_path: "",
+    owner: "google",
+    // This is critical: install in vendor
+    vendor: true,
 }
 
-prebuilt_vendor_file {
+prebuilt_etc {
     name: "vendor_compatibility_matrix_xml",
     src: "compatibility_matrix.xml",
     sub_dir: "",
     filename: "compatibility_matrix.xml",
+    installable: true,
+    relative_install_path: "",
+    owner: "google",
+    vendor: true,
 }
