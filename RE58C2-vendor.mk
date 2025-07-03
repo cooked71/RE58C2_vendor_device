@@ -909,7 +909,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SoterService \
     ims \
-    androidx.camera.extensions.impl 
+    androidx.camera.extensions.impl \
     ai_engine-default.xml \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.cas@1.2-service.xml \
