@@ -910,39 +910,39 @@ PRODUCT_PACKAGES += \
     SoterService \
     ims \
     androidx.camera.extensions.impl 
- #   ai_engine-default.xml \
- #   android.hardware.biometrics.fingerprint@2.1-service.xml \
- #   android.hardware.cas@1.2-service.xml \
- #   android.hardware.gatekeeper@1.0-service.trusty.xml \
- #   android.hardware.health-service.example.xml \
- #   android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
- #   android.hardware.sensors-multihal.xml \
- #   android.hardware.thermal@2.0-service.xml \
- #   android.hardware.wifi.hostapd.xml \
- #   android.hardware.wifi.supplicant.xml \
- #   android.hardware.wifi@1.0-service.xml \
- #   bluetooth_audio.xml \
- #   cplog_svc-default.xml \
- #   enhance-default.xml \
- #   face-default.xml \
- #   hdcp-default.xml \
- #   lights.xml \
- #   manifest_android.hardware.drm-service.widevine.xml \
- #   manifest_dualsim.xml \
- #   manifest_media_c2_V1_1_unisoc.xml \
- #   manifest_oplus_performance.xml \
- #   memtrack.xml \
- #   network-default.xml \
- #   power.stats-default.xml \
- #   soter_default.xml \
- #   trusty-default.xml \
- #   tui-default.xml \
- #   vendor-fingerprintmmi-default.xml \
- #   vendor-log-default.xml \
- #   vendor-oemlock-default.xml \
- #   vendor-power-default.xml \
- #   vendor.sprd.hardware.boot@1.2.xml \
- #   vendor.sprd.hardware.gnss@2.2-service.xml \
- #   vendor.sprd.hardware.thermal@2.0-service.xml \
- #   vibrator.xml \
-  #  manifest_kernel.xml
+    ai_engine-default.xml \
+    android.hardware.biometrics.fingerprint@2.1-service.xml \
+    android.hardware.cas@1.2-service.xml \
+    android.hardware.gatekeeper@1.0-service.trusty.xml \
+    android.hardware.health-service.example.xml \
+    android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
+    android.hardware.sensors-multihal.xml \
+    android.hardware.thermal@2.0-service.xml \
+    android.hardware.wifi.hostapd.xml \
+    android.hardware.wifi.supplicant.xml \
+    android.hardware.wifi@1.0-service.xml \
+    bluetooth_audio.xml \
+    cplog_svc-default.xml \
+    enhance-default.xml \
+    face-default.xml \
+    hdcp-default.xml \
+    lights.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
+    manifest_dualsim.xml \
+    manifest_media_c2_V1_1_unisoc.xml \
+    manifest_oplus_performance.xml \
+    memtrack.xml \
+    network-default.xml \
+    power.stats-default.xml \
+    soter_default.xml \
+    trusty-default.xml \
+    tui-default.xml \
+    vendor-fingerprintmmi-default.xml \
+    vendor-log-default.xml \
+    vendor-oemlock-default.xml \
+    vendor-power-default.xml \
+    vendor.sprd.hardware.boot@1.2.xml \
+    vendor.sprd.hardware.gnss@2.2-service.xml \
+    vendor.sprd.hardware.thermal@2.0-service.xml \
+    vibrator.xml \
+    manifest_kernel.xml
