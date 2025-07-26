@@ -380,7 +380,7 @@ PRODUCT_COPY_FILES += \
 
 
 # Inherit from vendor makefile
-$(call inherit-product, vendor/cooked71/RE58C2_vendor_device/RE58C2_vendor_device-vendor.mk)
+$(call inherit-product, vendor/cooked71/RE58C2_vendor_device/RE58C2-vendor.mk)
 
 # Define the source and target base directories
 vendor_blobs_path := $(LOCAL_PATH)/proprietary/vendor
