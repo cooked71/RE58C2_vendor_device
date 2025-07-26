@@ -377,623 +377,250 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/system_ext/etc/camera/default_ynr_param.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera/default_ynr_param.txt \
     vendor/realme/RE58C2/proprietary/system_ext/etc/init/dataLogDaemon.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dataLogDaemon.rc \
     vendor/realme/RE58C2/proprietary/system_ext/etc/init/data_rps.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/data_rps.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/AudioTest_hq/audio_1.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/AudioTest_hq/audio_1.mp3 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/AudioTest_hq/receiver.wav:$(TARGET_COPY_OUT_VENDOR)/etc/AudioTest_hq/receiver.wav \
-    vendor/realme/RE58C2/proprietary/vendor/etc/AudioTest_hq/spk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/AudioTest_hq/spk.wav \
-    vendor/realme/RE58C2/proprietary/vendor/etc/BBAT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/BBAT.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/FD_tunning_param.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FD_tunning_param.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/analyzer.py:$(TARGET_COPY_OUT_VENDOR)/etc/analyzer.py \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_apm_configuration_configurable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_apm_configuration_configurable.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_engine_criterion_types.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_criterion_types.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/blackAppList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/blackAppList.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/bluetooth_audio_policy_configuration_disable_offload.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_disable_offload.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/engineer_camera_config \
-    vendor/realme/RE58C2/proprietary/vendor/etc/config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/cp_dump_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cp_dump_info.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/deviceidle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/deviceidle.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/dirac/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/diracmobile.config \
-    vendor/realme/RE58C2/proprietary/vendor/etc/dirac/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/diracvdd.bin \
-    vendor/realme/RE58C2/proprietary/vendor/etc/dirac/interfacedb:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/interfacedb \
-    vendor/realme/RE58C2/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
-    vendor/realme/RE58C2/proprietary/vendor/etc/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/diracvdd.bin \
-    vendor/realme/RE58C2/proprietary/vendor/etc/dynamic_debug_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dynamic_debug_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/chnl/autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/autotest.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/chnl/cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/cali.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/chnl/normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/normal.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/chnl/normal_lite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/normal_lite.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/agdsp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/agdsp.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/ap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/ap.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/cp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/cp.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/pc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/pc.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/sensorhub.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/sensorhub.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/dev/wcn.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/dev/wcn.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/engpc/engpc.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/engpc.cfg \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/dci.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/dci.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/flash.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/flash.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_ft8057p_ld_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ft8057p_ld_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_ft8057p_ld_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ft8057p_ld_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_ft8057p_ld_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ft8057p_ld_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_ft8057p_ld_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ft8057p_ld_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_ft8057p_ld_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ft8057p_ld_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_boe_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_boe_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_boe_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_boe_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_boe_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_boe_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_boe_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_boe_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_boe_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_boe_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_hx83108a_lce_new_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_hjc_cd_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_inx_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_inx_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_inx_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_inx_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_inx_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_inx_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_inx_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_inx_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_inx_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_inx_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_icnl9916c_ld_hjc_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_new_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_new_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_new_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_new_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_new_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_new_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_new_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_new_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_new_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_new_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_old_mipi_hd_3d_lut.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_old_mipi_hd_3d_lut.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_old_mipi_hd_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_old_mipi_hd_abc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_old_mipi_hd_bld.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_old_mipi_hd_bld.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_old_mipi_hd_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_old_mipi_hd_cms.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/enhance/lcd_td4160_cw_old_mipi_hd_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_cw_old_mipi_hd_gamma.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.RMX3624:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.RMX3624 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.cali:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.cali \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.charge_mode:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.charge_mode \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.module:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.module \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_1h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10_go \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_4h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_4h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10_go \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_6h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_6h10 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_7h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_7h10 \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_haps:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_haps \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_hulk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_hulk \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_nico:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_nico \
-    vendor/realme/RE58C2/proprietary/vendor/etc/fstab.ums9230_zebu:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_zebu \
-    vendor/realme/RE58C2/proprietary/vendor/etc/gralloc/gralloc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gralloc.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/icap/control/IcapSwitchs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/IcapSwitchs.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/icap/control/scenes/Type_ISS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_ISS.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/imsUserAgent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/imsUserAgent.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/ai_engine-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ai_engine-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.usb-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.example.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/autotest.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/autotest.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/charge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/charge.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/charged.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/charged.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/connmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/connmgr.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/cp_diskserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cp_diskserver.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/cplog_svc-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cplog_svc-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/dcxsrv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxsrv.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/engpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/engpc.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/enhance-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/enhance-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/face-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/hdcp-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hdcp-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/init.guid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.guid.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/init.md.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/init.ums9230_hulk_Natv.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ums9230_hulk_Natv.nfc.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/lights.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/modem_control.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modem_control.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/network-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/network-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/phasecheckserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/phasecheckserver.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/power.stats-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power.stats-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/refnotify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/refnotify.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/remosaic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/remosaic.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/rpmbserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rpmbserver.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/slogmodem_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slogmodem_vendor.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/soter-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/soter-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/srtd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/srtd.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/storageproxyd_android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/storageproxyd_android.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/systemDebuggerd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/systemDebuggerd.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/tee_rpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_rpc.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermald.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/trusty-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusty-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/tsupplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tsupplicant.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/tui-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tui-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/unisoc.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unisoc.rild.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor-fingerprintmmi-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-fingerprintmmi-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor-oemlock-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-oemlock-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.log-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.log-default.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.boot@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.boot@1.2-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.connmgr@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.connmgr@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.gnss@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.gnss@2.2-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.network@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.network@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.performance@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.performance@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.thermal@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.thermal@2.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor.sprd.hardware.wcn@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.wcn@1.0-service.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vendor_engineermode.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_engineermode.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vibrator.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/vowifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vowifi.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/wcn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wcn.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/wcn_chr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wcn_chr.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/init/yloglite.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/yloglite.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/lmkd_param.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lmkd_param.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/log_settings.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/log_settings_autotest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_autotest.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/log_settings_cali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_cali.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/log_settings_factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_factory.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/log_settings_lite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_lite.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/models/noahark/gesture/tsn_gesture:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/gesture/tsn_gesture \
-    vendor/realme/RE58C2/proprietary/vendor/etc/models/noahark/imageClassify/README.md:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/README.md \
-    vendor/realme/RE58C2/proprietary/vendor/etc/models/noahark/imageClassify/cv_imageClassify:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/cv_imageClassify \
-    vendor/realme/RE58C2/proprietary/vendor/etc/models/noahark/imageClassify/imageclassify_labels.txt:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/imageclassify_labels.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/modem_cp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_cp_info.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/modem_sp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_sp_info.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/numeric_operator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/numeric_operator.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/nvmerge.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/nvmerge.cfg \
-    vendor/realme/RE58C2/proprietary/vendor/etc/operator_config/au_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/operator_config/au_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/operator_config/in_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/operator_config/in_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/operator_config/jp_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/operator_config/jp_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/operator_config/pl_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/operator_config/pl_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/operator_config/tw_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/operator_config/tw_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/Structure/Policy/ProductStrategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/ProductStrategies.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicyClass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicyClass.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/power_info.db:$(TARGET_COPY_OUT_VENDOR)/etc/power_info.db \
-    vendor/realme/RE58C2/proprietary/vendor/etc/power_resource_file_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_file_info.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/power_resource_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_id_define.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/power_scene_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/power_scene_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_id_define.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/pwctl_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwctl_config.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/raw_mfnr/raw_mfnr/const_file.txt:$(TARGET_COPY_OUT_VENDOR)/etc/raw_mfnr/raw_mfnr/const_file.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/raw_mfnr/raw_mfnr/raw_mfnr_tuning.txt:$(TARGET_COPY_OUT_VENDOR)/etc/raw_mfnr/raw_mfnr/raw_mfnr_tuning.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/colon_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/colon_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/colon_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/colon_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/colon_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_1_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_1_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_2_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_2_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_3_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_3_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_4_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_4_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_5_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_5_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_6_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_6_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_7_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_7_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/error_8_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/error_8_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_360X640_rorate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_360X640_rorate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_480X800_rorate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_480X800_rorate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate0_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate0_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate1_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate1_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate2_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate2_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate3_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate3_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate4_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate4_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate5_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate5_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/indeterminate6_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/indeterminate6_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_0_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_0_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_1_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_1_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_2_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_2_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_3_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_3_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_4_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_4_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_5_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_5_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_6_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_6_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_7_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_7_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_8_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_8_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_9_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_9_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_1080X1920.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_1080X1920_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_1080X1920_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_1440X2560.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_1440X2560_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_1440X2560_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_360X640.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_360X640_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_360X640_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_480X800.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_480X800_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_720X1280.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/res/images/number_percent_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_720X1280_rotate.png \
-    vendor/realme/RE58C2/proprietary/vendor/etc/scenario.conf:$(TARGET_COPY_OUT_VENDOR)/etc/scenario.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy \
-    vendor/realme/RE58C2/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sinput/NVTCapacitiveTouchScreen.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sinput/NVTCapacitiveTouchScreen.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sinput/adaptive_ts.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sinput/adaptive_ts.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sinput/fts_ts.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sinput/fts_ts.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sixth_param.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_param.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sixth_param_voip.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_param_voip.txt \
-    vendor/realme/RE58C2/proprietary/vendor/etc/slog_modem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/slog_modem_autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_autotest.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/slog_modem_cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_cali.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/slog_modem_factory.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_factory.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/spirentroot.cer:$(TARGET_COPY_OUT_VENDOR)/etc/spirentroot.cer \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sprd_audio_policy_engine_criteria.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_audio_policy_engine_criteria.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/sprd_hdr_tuning.param:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_hdr_tuning.param \
-    vendor/realme/RE58C2/proprietary/vendor/etc/supl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/supl.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
-    vendor/realme/RE58C2/proprietary/vendor/etc/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
-    vendor/realme/RE58C2/proprietary/vendor/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/wcn_chr.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wcn_chr.ini \
-    vendor/realme/RE58C2/proprietary/vendor/etc/wifisar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifisar.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ylog.conf.custom:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.custom \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ylog.conf.debug:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.debug \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ylog.conf.factorytest:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.factorytest \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ylog.conf.user:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.user \
-    vendor/realme/RE58C2/proprietary/vendor/etc/yloglite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglite.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/yloglitesource.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglitesource.conf \
-    vendor/realme/RE58C2/proprietary/vendor/etc/ylogsource.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ylogsource.conf \
-    vendor/realme/RE58C2/proprietary/vendor/lib/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/arm.graphics-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/arm.graphics-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk_platform.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/arm.graphics-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V3-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.ums9230.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLES_mali.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1 \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.1 \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.2 \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg_hw_sprd.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/arm.graphics-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V2-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/arm.graphics-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V2-ndk_platform.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/arm.graphics-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V3-ndk.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.ums9230.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLES_mali.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1 \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.1 \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
-    vendor/realme/RE58C2/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so \
 
-# Vendor HAL binaries
-PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service.unisoc \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service.trusty \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.1-unisoc-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.power.stats-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.stats-service.example \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.rebootescrow-service.default:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.rebootescrow-service.default \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.usb-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-service.example \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/urild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/urild \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.biometrics.face-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.biometrics.face-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.boot@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.boot@1.2-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.commondcs@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.connmgr@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.connmgr@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.cplog_svc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.cplog_svc-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.enhance-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.enhance-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.fingerprintmmi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.fingerprintmmi-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.gnss@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.gnss@2.2-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.hdcp-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.hdcp-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.lights-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.lights-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.log-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.log-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.memtrack-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.memtrack-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.network@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.network@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.network-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.network-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.oemlock-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.oemlock-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.performance@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.performance@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.soter-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.thermal@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.thermal@2.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.trusty-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.trusty-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.tui-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.tui-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.vibrator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.vibrator-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.wcn@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.wcn@1.0-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.unisoc.hardware.ai_engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.ai_engine-service \
-    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.unisoc.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.power-service
 
+# Inherit from vendor makefile
+$(call inherit-product, vendor/cooked71/RE58C2_vendor_device/RE58C2_vendor_device-vendor.mk)
+
+# Define the source and target base directories
+vendor_blobs_path := $(LOCAL_PATH)/proprietary/vendor
+vendor_target_path := :$(TARGET_COPY_OUT_VENDOR)
+
+# Function to recursively include all vendor files
+define include-vendor-files
+$(foreach file,$(shell find $(1) -type f), \
+    $(eval PRODUCT_COPY_FILES += $(file):$(subst $(1),$(2),$(file))))
+endef
+
+# Include all vendor files
+$(call include-vendor-files,$(vendor_blobs_path),$(vendor_target_path))
+
+
+# RE58C2-vendor.mk - Final Optimized Package List
+
+# ========================
+# Core Android HAL Services
+# ========================
 PRODUCT_PACKAGES += \
-    SoterService \
-    ims \
-    androidx.camera.extensions.impl \
-    ai_engine-default.xml \
-    android.hardware.biometrics.fingerprint@2.1-service.xml \
-    android.hardware.cas@1.2-service.xml \
-    android.hardware.gatekeeper@1.0-service.trusty.xml \
-    android.hardware.health-service.example.xml \
-    android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
-    android.hardware.sensors-multihal.xml \
-    android.hardware.thermal@2.0-service.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
-    android.hardware.wifi@1.0-service.xml \
-    bluetooth_audio.xml \
-    cplog_svc-default.xml \
-    enhance-default.xml \
-    face-default.xml \
-    hdcp-default.xml \
-    lights.xml \
-    manifest_android.hardware.drm-service.widevine.xml \
-    manifest_dualsim.xml \
-    manifest_media_c2_V1_1_unisoc.xml \
-    manifest_oplus_performance.xml \
-    memtrack.xml \
-    network-default.xml \
-    power.stats-default.xml \
-    soter_default.xml \
-    trusty-default.xml \
-    tui-default.xml \
-    vendor-fingerprintmmi-default.xml \
-    vendor-log-default.xml \
-    vendor-oemlock-default.xml \
-    vendor-power-default.xml \
-    vendor.sprd.hardware.boot@1.2.xml \
-    vendor.sprd.hardware.gnss@2.2-service.xml \
-    vendor.sprd.hardware.thermal@2.0-service.xml \
-    vibrator.xml \
-    manifest_kernel.xml
+    android.hardware.health@2.0-service \
+    android.hardware.wifi@1.0-service \
+    android.hardware.renderscript@1.0-impl \
+    android.hardware.camera.provider@2.4-impl-sprd \
+    android.hardware.camera.provider@2.4-external-sprd \
+    android.hardware.camera.provider@2.4-legacy-sprd \
+    android.hardware.sensors@2.X-sprd_subhal
+
+# ========================
+# Vendor HAL Implementations
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.gatekeeper-1-0 \
+    vendor.power-default \
+    vendor.soter-default \
+    vendor.thermal-hal-2-0 \
+    vendor.health-default \
+    vendor.charger \
+    vendor.bluetooth-1-1 \
+    vendor.usb_default \
+    vendor.gralloc-4-0 \
+    vendor.hwcomposer-2-4 \
+    vendor.audio-hal \
+    vendor.drm-clearkey-service \
+    vendor.drm-widevine-hal \
+    vendor.rebootescrow-default \
+    vendor.oemlock-default \
+    vendor.enhance-default \
+    vendor.log-default \
+    vendor.power.stats-default \
+    vendor.hdcp_default
+
+# ========================
+# SPRD-specific Components
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.connmgr@1.0-service \
+    vendor.sprd.hardware.connmgr@1.0-impl \
+    vendor.sprd.boot-hal-1-2 \
+    vendor.sprd.hardware.trusty-service \
+    vendor.sprd.hardware.trusty-impl \
+    vendor.sprd.hardware.tui-service \
+    vendor.sprd.hardware.tui@1.0 \
+    vendor.sprd.hardware.vibrator-service \
+    vendor.sprd.hardware.performance@1.0-service \
+    vendor.sprd.hardware.performance@1.0 \
+    vendor.sprd.hardware.commondcs@1.0-service \
+    vendor.sprd.hardware.commondcs@1.0 \
+    vendor.sprd.hardware.wcn@1.0-service \
+    vendor.sprd.hardware.wcn@1.0-impl \
+    vendor.sprd.hardware.wcn@1.0 \
+    vendor.sprd.hardware.lights-service \
+    vendor.sprd.hardware.memtrack-service \
+    vendor.sprd.hardware.network@1.0-service \
+    vendor.sprd.hardware.network@1.0-impl \
+    vendor.sprd.hardware.network@1.0 \
+    vendor.sprd.hardware.gnss@1.0-impl \
+    vendor.sprd.hardware.gnss@1.0 \
+    vendor.sprd.hardware.thermal@1.0 \
+    vendor.sprd.hardware.thermal@2.0-impl \
+    vendor.sprd.hardware.thermal@2.0 \
+    vendor.sprd.algoservice@1.0 \
+    vendor.sprd.broadcastradio-hal2 \
+    vendor.sprd.hardware.cplog_svc@1.0 \
+    vendor.gnss_service_sprd \
+    gpsd
+
+# ========================
+# Security Services
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.keymint-unisoc-2.0 \
+    vendor.tee_rpc \
+    vendor.rpmbsvr \
+    vndservicemanager \
+    vendor.rpmbproxy \
+    vendor.nsproxy \
+    vendor.teensproxy \
+    vendor.tsupplicant \
+    vendor.tsupplicant-cali
+
+# ========================
+# Connectivity Services
+# ========================
+PRODUCT_PACKAGES += \
+    wpa_supplicant \
+    vendor.wpa_supplicant \
+    p2p_supplicant \
+    hostapd \
+    vendor.wifi_hal_legacy \
+    vendor.wcnd \
+    vendor.wcnd_eng \
+    vendor.wcn_chr
+
+# ========================
+# Camera/Media Services
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.camera-provider-2-4 \
+    vendor.media.omx \
+    media.unisoc.codec2 \
+    remosaic_daemon
+
+# ========================
+# Modem/Sensors
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.sensors-hal-multihal \
+    vendor.slogmodem \
+    vendor.modem_control \
+    vendor.ril-daemon \
+    vendor.stk
+
+# ========================
+# Realme/Oppo Specific
+# ========================
+PRODUCT_PACKAGES += \
+    wifisar_realme \
+    oppo.engineer-1-0 \
+    vendor.oppo.engnative.engineer@1.0 \
+    vendor.fps_hal \
+    vendor.fingerprintmmi-default \
+    vendor.face-default \
+    vendor.sprd.hardware.face-V1-ndk \
+    vendor.sprd.hardware.fingerprintmmi-V1-ndk
+
+# ========================
+# Debug/Utility Services
+# ========================
+PRODUCT_PACKAGES += \
+    phasecheckserver \
+    vendor.engpcclientlte \
+    bugreport \
+    logcat2kmsg \
+    vendor.cplog_svc-default \
+    yloglite \
+    vendor.srtd \
+    vendor.dcxsrv \
+    systemDebuggerd
+
+# ========================
+# Thermal/Power Management
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.thermald \
+    vendor.thermald.chg \
+    vendor.charged \
+    vendor.charged.server \
+    vendor.refnotify
+
+# ========================
+# AI/Neural Networks
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.ai_engine-default \
+    vendor.unisoc.hardware.ai_engine-V1-ndk \
+    neuralnetworks_hal_service_armnn-gpu
+
+# ========================
+# Storage Services
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.cp_diskserver \
+    vendor.cas-hal-1-2
+
+# ========================
+# Network Services
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.network-default \
+    vendor.sprd.hardware.network-V1-ndk
+
+# ========================
+# NXP NFC Components
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.nxp.eventprocessor@1.0 \
+    vendor.nxp.nxpnfclegacy@1.0
+
+# ========================
+# Unisoc Radio Components
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.unisoc.hardware.power-V1-ndk \
+    vendor.unisoc.hardware.radio-V1-ndk \
+    vendor.unisoc.hardware.radio.data-V1-ndk \
+    vendor.unisoc.hardware.radio.ims-V1-ndk \
+    vendor.unisoc.hardware.radio.messaging-V1-ndk \
+    vendor.unisoc.hardware.radio.modem-V1-ndk \
+    vendor.unisoc.hardware.radio.network-V1-ndk \
+    vendor.unisoc.hardware.radio.sim-V1-ndk \
+    vendor.unisoc.hardware.radio.voice-V1-ndk
+
+# ========================
+# NDK Interface Libraries
+# ========================
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.cplog_svc-V2-ndk \
+    vendor.sprd.hardware.enhance-V1-ndk \
+    vendor.sprd.hardware.hdcp-V1-ndk \
+    vendor.sprd.hardware.log-V1-ndk \
+    vendor.sprd.hardware.network-V1-ndk \
+    vendor.sprd.hardware.soter-V1-ndk \
+    vendor.sprd.hardware.trusty-V1-ndk \
+    vendor.sprd.hardware.tui-V1-ndk
+
+# ========================
+# Boot/Init Services
+# ========================
+PRODUCT_PACKAGES += \
+    create_splloader_dual_slot_byname_path \
+    uniber \
+    watchdogd \
+    insmod-sh \
+    mmc_ffu
+
+# ========================
+# Security Tests
+# ========================
+PRODUCT_PACKAGES += \
+    boringssl_self_test32_vendor \
+    boringssl_self_test64_vendor
