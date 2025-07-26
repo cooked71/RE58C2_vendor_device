@@ -369,7 +369,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmedia_codeclist_64",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib64/libmedia_codeclist.so"],
+    srcs: ["proprietary/lib64/libmedia_codeclist.so"],
     compile_multilib: "64",
     vendor: true,
     strip: {
@@ -380,7 +380,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni_64",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib64/libois_algorithm_jni.so"],
+    srcs: ["proprietary/lib64/libois_algorithm_jni.so"],
     compile_multilib: "64",
     vendor: true,
     strip: {
@@ -391,7 +391,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferpool@2.0.1_64",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so"],
+    srcs: ["proprietary/lib64/libstagefright_bufferpool@2.0.1.so"],
     compile_multilib: "64",
     vendor: true,
     strip: {
