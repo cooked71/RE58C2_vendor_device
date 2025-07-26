@@ -906,6 +906,57 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/realme/RE58C2/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so \
 
+# Vendor HAL binaries
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service.unisoc \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service.trusty \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.1-unisoc-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.power.stats-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.stats-service.example \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.rebootescrow-service.default:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.rebootescrow-service.default \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.usb-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-service.example \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/urild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/urild \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.biometrics.face-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.biometrics.face-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.boot@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.boot@1.2-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.commondcs@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.connmgr@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.connmgr@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.cplog_svc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.cplog_svc-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.enhance-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.enhance-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.fingerprintmmi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.fingerprintmmi-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.gnss@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.gnss@2.2-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.hdcp-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.hdcp-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.lights-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.lights-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.log-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.log-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.memtrack-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.memtrack-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.network@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.network@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.network-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.network-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.oemlock-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.oemlock-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.performance@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.performance@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.soter-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.thermal@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.thermal@2.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.trusty-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.trusty-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.tui-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.tui-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.vibrator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.vibrator-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.sprd.hardware.wcn@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.wcn@1.0-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.unisoc.hardware.ai_engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.ai_engine-service \
+    vendor/realme/RE58C2/proprietary/vendor/bin/hw/vendor.unisoc.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.power-service
+
 PRODUCT_PACKAGES += \
     SoterService \
     ims \
