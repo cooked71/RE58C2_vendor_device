@@ -426,7 +426,6 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     vendor: true,
     compile_multilib: "64",
-    vintf_fragments: ["vendor.oppo.engnative.engineer@1.0-service.xml"],
 }
 
 cc_prebuilt_binary {
