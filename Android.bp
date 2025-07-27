@@ -324,7 +324,7 @@ prebuilt_etc_xml {
 cc_prebuilt_library_shared {
     name: "libmedia_codeclist",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib/libmedia_codeclist.so"],
+    srcs: ["proprietary/lib/libmedia_codeclist.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
