@@ -414,32 +414,6 @@ cc_prebuilt_library_shared {
     },
 }
 
-// NFC Libraries
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfclegacy@1.0",
-    vendor: true,
-    srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
-    compile_multilib: "32",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfclegacy@1.0",
-    vendor: true,
-    srcs: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
-    compile_multilib: "64",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.eventprocessor@1.0",
-    vendor: true,
-    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
-    compile_multilib: "64",
-    target: {
-        android_arm: {
-            srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
-        },
-    },
-}
 
 // =============================================
 // Prebuilt Binaries with init.rc (Corrected)
