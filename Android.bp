@@ -1,5 +1,4 @@
-// RE58C2 Android.bp - Optimized Vendor Implementation
-
+// RE58C2 Android.bp - Corrected Vendor Implementation
 soong_namespace {
     imports: [],
 }
@@ -7,7 +6,6 @@ soong_namespace {
 // =============================================
 // Prebuilt APKs
 // =============================================
-
 android_app_import {
     name: "SoterService",
     owner: "realme",
@@ -34,7 +32,6 @@ android_app_import {
 // =============================================
 // Prebuilt JARs
 // =============================================
-
 dex_import {
     name: "androidx.camera.extensions.impl",
     owner: "realme",
@@ -43,18 +40,12 @@ dex_import {
 }
 
 // =============================================
-// VINTF Manifest Generation (Optimized)
+// VINTF Manifest Definitions (Optimized)
 // =============================================
-
-/// =============================================
-// Complete VINTF Manifest Definitions
-// =============================================
-
 // Security & Authentication
 prebuilt_etc_xml {
     name: "ai_engine-default_manifest",
     src: "proprietary/vendor/etc/vintf/manifest/ai_engine-default.xml",
-    filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
     owner: "realme",
@@ -63,7 +54,6 @@ prebuilt_etc_xml {
 prebuilt_etc_xml {
     name: "fingerprint_manifest",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
-    filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
     owner: "realme",
@@ -425,73 +415,124 @@ cc_prebuilt_library_shared {
 }
 
 // NFC Libraries
-nfc_libs := [
-    {
-        name: "vendor.nxp.nxpnfclegacy@1.0",
-        src_32: "proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so",
-        src_64: "proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"
-    },
-    {
-        name: "vendor.nxp.eventprocessor@1.0",
-        src_64: "proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"
-    }
-]
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.nxpnfclegacy@1.0",
+    vendor: true,
+    srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
+    compile_multilib: "32",
+}
 
-foreach(lib, nfc_libs,
-    cc_prebuilt_library_shared {
-        name: lib.name,
-        owner: "realme",
-        srcs: [lib.src_64],
-        compile_multilib: "64",
-        vendor: true,
-        strip: { none: true },
-    }
-    // Add 32-bit version if source exists
-    if (lib.src_32 != "") {
-        cc_prebuilt_library_shared {
-            name: lib.name + "_32",
-            owner: "realme",
-            srcs: [lib.src_32],
-            compile_multilib: "32",
-            vendor: true,
-            strip: { none: true },
-        }
-    }
-)
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.nxpnfclegacy@1.0",
+    vendor: true,
+    srcs: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
+    compile_multilib: "64",
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.eventprocessor@1.0",
+    vendor: true,
+    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
+    compile_multilib: "64",
+    target: {
+        android_arm: {
+            srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
+        },
+    },
+}
 
 // =============================================
-// Prebuilt Binaries with init.rc
+// Prebuilt Binaries with init.rc (Corrected)
 // =============================================
+cc_prebuilt_binary {
+    name: "vendor.oppo.engnative.engineer@1.0-service",
+    owner: "realme",
+    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
+    relative_install_path: "hw",
+    vendor: true,
+    compile_multilib: "64",
+    vintf_fragments: ["vendor.oppo.engnative.engineer@1.0-service.xml"],
+}
 
-service_binaries := [
-    {
-        name: "vendor.oppo.engnative.engineer@1.0-service",
-        src: "proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service",
-        rc: "proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"
+cc_prebuilt_binary {
+    name: "vendor.sprd.hardware.commondcs@1.0-service",
+    owner: "realme",
+    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
+    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
+    relative_install_path: "hw",
+    vendor: true,
+    compile_multilib: "64",
+}
+
+// =============================================
+// Prebuilt Shared Libraries (Optimized)
+// =============================================
+// NFC Libraries (Multilib pattern)
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.nxpnfclegacy@1.0",
+    owner: "realme",
+    vendor: true,
+    multilib: {
+        lib32: {
+            srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
+        },
     },
-    {
-        name: "vendor.sprd.hardware.commondcs@1.0-service",
-        src: "proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
-        rc: "proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"
-    }
-]
+}
 
-foreach(bin, service_binaries,
-    cc_prebuilt_binary {
-        name: bin.name,
-        owner: "realme",
-        srcs: [bin.src],
-        init_rc: [bin.rc],
-        relative_install_path: "hw",
-        vendor: true,
-        compile_multilib: "64",
-    }
-)
+cc_prebuilt_library_shared {
+    name: "vendor.nxp.eventprocessor@1.0",
+    owner: "realme",
+    vendor: true,
+    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
+    target: {
+        android_arm: {
+            srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
+        },
+    },
+    compile_multilib: "first",
+}
+
+// Graphics Libraries
+cc_prebuilt_library_shared {
+    name: "libGLES_mali",
+    owner: "realme",
+    vendor: true,
+    srcs: ["proprietary/vendor/lib64/egl/libGLES_mali.so"],
+    compile_multilib: "64",
+}
+
+// Audio Libraries
+cc_prebuilt_library_shared {
+    name: "libsprdaudiohalv7",
+    owner: "realme",
+    vendor: true,
+    srcs: ["proprietary/vendor/lib64/libsprdaudiohalv7.so"],
+    compile_multilib: "64",
+}
+
+// =============================================
+// Configuration Files
+// =============================================
+prebuilt_etc {
+    name: "audio_policy_configuration",
+    src: "proprietary/odm/etc/audio/audio_policy_configuration.xml",
+    sub_dir: "audio",
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "media_codecs",
+    src: "proprietary/vendor/etc/media_codecs.xml",
+    owner: "realme",
+}
 
 // =============================================
 // License
 // =============================================
-
 license {
     name: "realme-proprietary-license",
     license_kinds: ["proprietary"],
