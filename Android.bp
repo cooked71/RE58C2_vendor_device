@@ -335,7 +335,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib/libois_algorithm_jni.so"],
+    srcs: ["proprietary/lib/libois_algorithm_jni.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
@@ -346,7 +346,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferpool@2.0.1",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so"],
+    srcs: ["proprietary/lib/libstagefright_bufferpool@2.0.1.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
@@ -357,7 +357,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.nxp.nxpnfclegacy@1.0",
     owner: "realme",
-    srcs: ["proprietary/vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
+    srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
