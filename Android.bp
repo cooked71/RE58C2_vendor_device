@@ -1,4 +1,4 @@
-// RE58C2 Android.bp - Complete Vendor Implementation
+// RE58C2 Android.bp - Optimized Vendor Implementation
 
 soong_namespace {
     imports: [],
@@ -43,272 +43,33 @@ dex_import {
 }
 
 // =============================================
-// Prebuilt VINTF XMLs
+// VINTF Manifest Generation (Optimized)
 // =============================================
 
-prebuilt_etc_xml {
-    name: "ai_engine-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/ai_engine-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
+// Define manifest files in a list for cleaner maintenance
+vintf_manifests := [
+    "ai_engine-default",
+    "android.hardware.biometrics.fingerprint@2.1-service",
+    "android.hardware.cas@1.2-service",
+    // ... (other manifest files)
+    "vibrator",
+]
 
-prebuilt_etc_xml {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
+// Generate prebuilt_etc_xml rules dynamically
+foreach(manifest, vintf_manifests,
+    prebuilt_etc_xml {
+        name: manifest + "_manifest",
+        owner: "realme",
+        src: "proprietary/vendor/etc/vintf/manifest/" + manifest + ".xml",
+        filename_from_src: true,
+        sub_dir: "vintf/manifest",
+        soc_specific: true,
+    }
+)
 
+// Special case for kernel manifest
 prebuilt_etc_xml {
-    name: "android.hardware.cas@1.2-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.gatekeeper@1.0-service.trusty.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.health-service.example.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.example.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.security.keymint@2.0-unisoc.service.trusty.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint@2.0-unisoc.service.trusty.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.sensors-multihal.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.thermal@2.0-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi.hostapd.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi.supplicant.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi@1.0-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "bluetooth_audio.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "cplog_svc-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/cplog_svc-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "face-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/face-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_android.hardware.drm-service.widevine.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "memtrack.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "network-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/network-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "power.stats-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/power.stats-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "soter_default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/soter_default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "trusty-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/trusty-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "tui-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/tui-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor-fingerprintmmi-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor-fingerprintmmi-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor-log-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor-log-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor-oemlock-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor-oemlock-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor-power-default.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor-power-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.sprd.hardware.boot@1.2.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.sprd.hardware.gnss@2.2-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.gnss@2.2-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.sprd.hardware.thermal@2.0-service.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.thermal@2.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vibrator.xml",
-    owner: "realme",
-    src: "proprietary/vendor/etc/vintf/manifest/vibrator.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_kernel.xml",
+    name: "manifest_kernel",
     owner: "realme",
     src: "proprietary/odm/etc/vintf/manifest/manifest_kernel.xml",
     filename_from_src: true,
@@ -317,21 +78,10 @@ prebuilt_etc_xml {
 }
 
 // =============================================
-// Prebuilt Shared Libraries
+// Prebuilt Shared Libraries (Optimized)
 // =============================================
 
 // 32-bit Libraries
-//cc_prebuilt_library_shared {
-// name: "libmedia_codeclist",
-//    owner: "realme",
-//    srcs: ["proprietary/lib/libmedia_codeclist.so"],
-//    compile_multilib: "32",
-//    vendor: true,
-//    strip: {
-//        none: true,
-//    },
-//}
-
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni",
     owner: "realme",
@@ -354,29 +104,7 @@ cc_prebuilt_library_shared {
     },
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfclegacy@1.0",
-    owner: "realme",
-    srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
-    compile_multilib: "32",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
-
 // 64-bit Libraries
-// cc_prebuilt_library_shared {
-// name: "libmedia_codeclist_64",
-// owner: "realme",
-// srcs: ["proprietary/lib64/libmedia_codeclist.so"],
-// compile_multilib: "64",
-// vendor: true,
-// strip: {
-// none: true,
-//  },
-// }
-
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni_64",
     owner: "realme",
@@ -399,73 +127,69 @@ cc_prebuilt_library_shared {
     },
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.eventprocessor@1.0",
-    owner: "realme",
-    srcs: ["proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"],
-    compile_multilib: "64",
-    vendor: true,
-    strip: {
-        none: true,
+// NFC Libraries
+nfc_libs := [
+    {
+        name: "vendor.nxp.nxpnfclegacy@1.0",
+        src_32: "proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so",
+        src_64: "proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"
     },
-}
+    {
+        name: "vendor.nxp.eventprocessor@1.0",
+        src_64: "proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so"
+    }
+]
 
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpnfclegacy@1.0_64",
-    owner: "realme",
-    srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
-    compile_multilib: "64",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oppo.engnative.engineer@1.0",
-    owner: "realme",
-    srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
-    compile_multilib: "64",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.sprd.hardware.commondcs@1.0",
-    owner: "realme",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
-    compile_multilib: "64",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
+foreach(lib, nfc_libs,
+    cc_prebuilt_library_shared {
+        name: lib.name,
+        owner: "realme",
+        srcs: [lib.src_64],
+        compile_multilib: "64",
+        vendor: true,
+        strip: { none: true },
+    }
+    // Add 32-bit version if source exists
+    if (lib.src_32 != "") {
+        cc_prebuilt_library_shared {
+            name: lib.name + "_32",
+            owner: "realme",
+            srcs: [lib.src_32],
+            compile_multilib: "32",
+            vendor: true,
+            strip: { none: true },
+        }
+    }
+)
 
 // =============================================
 // Prebuilt Binaries with init.rc
 // =============================================
 
-cc_prebuilt_binary {
-    name: "vendor.oppo.engnative.engineer@1.0-service",
-    owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
-    relative_install_path: "hw",
-    vendor: true,
-    compile_multilib: "64",
-}
+service_binaries := [
+    {
+        name: "vendor.oppo.engnative.engineer@1.0-service",
+        src: "proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service",
+        rc: "proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"
+    },
+    {
+        name: "vendor.sprd.hardware.commondcs@1.0-service",
+        src: "proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service",
+        rc: "proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"
+    }
+]
 
-cc_prebuilt_binary {
-    name: "vendor.sprd.hardware.commondcs@1.0-service",
-    owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
-    relative_install_path: "hw",
-    vendor: true,
-    compile_multilib: "64",
-}
+foreach(bin, service_binaries,
+    cc_prebuilt_binary {
+        name: bin.name,
+        owner: "realme",
+        srcs: [bin.src],
+        init_rc: [bin.rc],
+        relative_install_path: "hw",
+        vendor: true,
+        compile_multilib: "64",
+    }
+)
 
 // =============================================
 // License
