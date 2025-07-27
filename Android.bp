@@ -321,16 +321,16 @@ prebuilt_etc_xml {
 // =============================================
 
 // 32-bit Libraries
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist",
-    owner: "realme",
-    srcs: ["proprietary/lib/libmedia_codeclist.so"],
-    compile_multilib: "32",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
+//cc_prebuilt_library_shared {
+// name: "libmedia_codeclist",
+//    owner: "realme",
+//    srcs: ["proprietary/lib/libmedia_codeclist.so"],
+//    compile_multilib: "32",
+//    vendor: true,
+//    strip: {
+//        none: true,
+//    },
+// }
 
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni",
@@ -366,16 +366,16 @@ cc_prebuilt_library_shared {
 }
 
 // 64-bit Libraries
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist_64",
-    owner: "realme",
-    srcs: ["proprietary/lib64/libmedia_codeclist.so"],
-    compile_multilib: "64",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-}
+// cc_prebuilt_library_shared {
+// name: "libmedia_codeclist_64",
+// owner: "realme",
+// srcs: ["proprietary/lib64/libmedia_codeclist.so"],
+// compile_multilib: "64",
+// vendor: true,
+// strip: {
+// none: true,
+//  },
+// }
 
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni_64",

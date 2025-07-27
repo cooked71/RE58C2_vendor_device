@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     vendor/realme/RE58C2/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RE58C2/proprietary/etc/temperature_profile/sys_high_temperature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/temperature_profile/sys_high_temperature.xml \
-    vendor/realme/RE58C2/proprietary/lib/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmedia_codeclist.so \
     vendor/realme/RE58C2/proprietary/lib/libois_algorithm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libois_algorithm_jni.so \
     vendor/realme/RE58C2/proprietary/lib/libremotedisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libremotedisplay.so \
     vendor/realme/RE58C2/proprietary/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_bufferpool@2.0.1.so \
@@ -19,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/lib/libstagefright_surface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_surface.so \
     vendor/realme/RE58C2/proprietary/lib/libstagefright_surface_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_surface_utils.so \
     vendor/realme/RE58C2/proprietary/lib/libstagefright_wfd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_wfd.so \
-    vendor/realme/RE58C2/proprietary/lib64/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_codeclist.so \
     vendor/realme/RE58C2/proprietary/lib64/libois_algorithm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libois_algorithm_jni.so \
     vendor/realme/RE58C2/proprietary/lib64/libremotedisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libremotedisplay.so \
     vendor/realme/RE58C2/proprietary/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_bufferpool@2.0.1.so \
