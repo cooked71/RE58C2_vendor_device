@@ -470,17 +470,24 @@ cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     owner: "realme",
     vendor: true,
-    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],  // Only 64-bit version
+    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
+    compile_multilib: "64",
     shared_libs: [
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "libcutils",
-        "libc++",
+        "libhidlbase.vendor",
+        "liblog.vendor",
+        "libutils.vendor",
+        "libcutils.vendor",
+        "libc++.vendor",
         "libc",
         "libm",
         "libdl",
     ],
+    sanitize: {
+        never: true,
+    },
+    strip: {
+        none: true,
+    },
 }
 
 // Graphics Libraries
