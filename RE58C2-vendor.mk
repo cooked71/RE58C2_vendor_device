@@ -519,69 +519,105 @@ PRODUCT_PACKAGES += \
 # ========================
 # Vendor HAL Implementations
 # ========================
+
+# Hardware HAL Services
 PRODUCT_PACKAGES += \
-    vendor.gatekeeper-1-0 \
-    vendor.power-default \
-    vendor.soter-default \
-    vendor.thermal-hal-2-0 \
-    vendor.health-default \
-    vendor.charger \
-    vendor.bluetooth-1-1 \
-    vendor.usb_default \
-    vendor.gralloc-4-0 \
-    vendor.hwcomposer-2-4 \
-    vendor.audio-hal \
-    vendor.drm-clearkey-service \
-    vendor.drm-widevine-hal \
-    vendor.rebootescrow-default \
-    vendor.oemlock-default \
-    vendor.enhance-default \
-    vendor.log-default \
-    vendor.power.stats-default \
-    vendor.hdcp_default
+    android.hardware.gatekeeper@1.0-service.trusty \
+    android.hardware.power-service.example \
+    android.hardware.health-service.example \
+    android.hardware.bluetooth@1.1-service.unisoc \
+    android.hardware.usb-service.example \
+    android.hardware.graphics.allocator@4.0-service \
+    android.hardware.graphics.composer@2.4-service \
+    android.hardware.audio.service \
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm-service.widevine \
+    android.hardware.rebootescrow-service.default \
+    android.hardware.power.stats-service.example
+
+# Vendor-specific Services
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.soter-service \
+    vendor.sprd.hardware.thermal@2.0-service \
+    vendor.sprd.hardware.oemlock-service \
+    vendor.sprd.hardware.enhance-service \
+    vendor.sprd.hardware.log-service \
+    vendor.sprd.hardware.hdcp-service
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 
 # ========================
 # SPRD-specific Components
 # ========================
+# Connectivity Management
 PRODUCT_PACKAGES += \
     vendor.sprd.hardware.connmgr@1.0-service \
-    vendor.sprd.hardware.connmgr@1.0-impl \
-    vendor.sprd.boot-hal-1-2 \
+    vendor.sprd.hardware.connmgr@1.0-impl
+
+# Boot & Trusty Services
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.boot@1.2-service \
     vendor.sprd.hardware.trusty-service \
-    vendor.sprd.hardware.trusty-impl \
+    vendor.sprd.hardware.trusty-impl
+
+# TUI (Trusted UI) Components
+PRODUCT_PACKAGES += \
     vendor.sprd.hardware.tui-service \
-    vendor.sprd.hardware.tui@1.0 \
+    vendor.sprd.hardware.tui@1.0-impl
+
+# Hardware Control Services
+PRODUCT_PACKAGES += \
     vendor.sprd.hardware.vibrator-service \
+    vendor.sprd.hardware.lights-service \
+    vendor.sprd.hardware.memtrack-service
+
+# Performance Management
+PRODUCT_PACKAGES += \
     vendor.sprd.hardware.performance@1.0-service \
-    vendor.sprd.hardware.performance@1.0 \
-    vendor.sprd.hardware.commondcs@1.0-service \
-    vendor.sprd.hardware.commondcs@1.0 \
+    vendor.sprd.hardware.performance@1.0-impl
+
+# Wireless Components
+PRODUCT_PACKAGES += \
     vendor.sprd.hardware.wcn@1.0-service \
     vendor.sprd.hardware.wcn@1.0-impl \
-    vendor.sprd.hardware.wcn@1.0 \
-    vendor.sprd.hardware.lights-service \
-    vendor.sprd.hardware.memtrack-service \
     vendor.sprd.hardware.network@1.0-service \
-    vendor.sprd.hardware.network@1.0-impl \
-    vendor.sprd.hardware.network@1.0 \
+    vendor.sprd.hardware.network@1.0-impl
+
+# GNSS/GPS Components
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.gnss@1.0-service \
     vendor.sprd.hardware.gnss@1.0-impl \
-    vendor.sprd.hardware.gnss@1.0 \
+    gpsd_sprd \
+    gps.default
+
+# Thermal Management
+PRODUCT_PACKAGES += \
     vendor.sprd.hardware.thermal@1.0 \
-    vendor.sprd.hardware.thermal@2.0-impl \
-    vendor.sprd.hardware.thermal@2.0 \
-    vendor.sprd.algoservice@1.0 \
-    vendor.sprd.broadcastradio-hal2 \
-    vendor.sprd.hardware.cplog_svc@1.0 \
-    vendor.gnss_service_sprd \
-    gpsd
+    vendor.sprd.hardware.thermal@2.0-service \
+    vendor.sprd.hardware.thermal@2.0-impl
+
+# Diagnostic & Logging Services
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.commondcs@1.0-service \
+    vendor.sprd.hardware.commondcs@1.0-impl \
+    vendor.sprd.hardware.cplog_svc@1.0-service
+
+# Broadcast & Algorithm Services
+PRODUCT_PACKAGES += \
+    vendor.sprd.hardware.broadcastradio@2.0-service \
+    vendor.sprd.algoservice@1.0
 
 # ========================
 # Security Services
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.keymint-unisoc-2.0 \
+    android.hardware.security.keymint@2.0-unisoc.service.trusty \
     vendor.tee_rpc \
-    vendor.rpmbsvr \
+    vendor.rpmbserver \
     vndservicemanager \
     vendor.rpmbproxy \
     vendor.nsproxy \
@@ -594,31 +630,28 @@ PRODUCT_PACKAGES += \
 # ========================
 PRODUCT_PACKAGES += \
     wpa_supplicant \
-    vendor.wpa_supplicant \
-    p2p_supplicant \
     hostapd \
-    vendor.wifi_hal_legacy \
-    vendor.wcnd \
-    vendor.wcnd_eng \
+    android.hardware.wifi@1.0-service \
+    vendor.wcn@1.0-service \
     vendor.wcn_chr
 
 # ========================
 # Camera/Media Services
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.camera-provider-2-4 \
-    vendor.media.omx \
-    media.unisoc.codec2 \
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.media.omx@1.0-service \
+    media.codec2.unisoc.service \
     remosaic_daemon
 
 # ========================
 # Modem/Sensors
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.sensors-hal-multihal \
-    vendor.slogmodem \
-    vendor.modem_control \
-    vendor.ril-daemon \
+    android.hardware.sensors-service.multihal \
+    slogmodem \
+    modem_control \
+    rild \
     vendor.stk
 
 # ========================
@@ -626,107 +659,60 @@ PRODUCT_PACKAGES += \
 # ========================
 PRODUCT_PACKAGES += \
     wifisar_realme \
-    oppo.engineer-1-0 \
-    vendor.oppo.engnative.engineer@1.0 \
-    vendor.fps_hal \
-    vendor.fingerprintmmi-default \
-    vendor.face-default \
-    vendor.sprd.hardware.face-V1-ndk \
-    vendor.sprd.hardware.fingerprintmmi-V1-ndk
+    vendor.oppo.engnative.engineer@1.0-service \
+    vendor.sprd.hardware.biometrics.face-service \
+    vendor.sprd.hardware.fingerprintmmi-service
 
 # ========================
 # Debug/Utility Services
 # ========================
 PRODUCT_PACKAGES += \
     phasecheckserver \
-    vendor.engpcclientlte \
-    bugreport \
-    logcat2kmsg \
-    vendor.cplog_svc-default \
+    engpc \
+    cplog_svc \
     yloglite \
-    vendor.srtd \
-    vendor.dcxsrv \
+    srtd \
+    dcxsrv \
     systemDebuggerd
 
 # ========================
 # Thermal/Power Management
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.thermald \
-    vendor.thermald.chg \
+    thermald \
     vendor.charged \
-    vendor.charged.server \
-    vendor.refnotify
+    refnotify
 
 # ========================
 # AI/Neural Networks
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.ai_engine-default \
-    vendor.unisoc.hardware.ai_engine-V1-ndk \
-    neuralnetworks_hal_service_armnn-gpu
+    vendor.unisoc.hardware.ai_engine-service \
+    android.hardware.neuralnetworks@1.3-service-armnn-gpu
 
 # ========================
 # Storage Services
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.cp_diskserver \
-    vendor.cas-hal-1-2
+    cp_diskserver \
+    android.hardware.cas@1.2-service
 
 # ========================
 # Network Services
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.network-default \
-    vendor.sprd.hardware.network-V1-ndk
+    vendor.sprd.hardware.network@1.0-service
 
 # ========================
 # NXP NFC Components
 # ========================
 PRODUCT_PACKAGES += \
-    vendor.nxp.eventprocessor@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0
-
-# ========================
-# Unisoc Radio Components
-# ========================
-PRODUCT_PACKAGES += \
-    vendor.unisoc.hardware.power-V1-ndk \
-    vendor.unisoc.hardware.radio-V1-ndk \
-    vendor.unisoc.hardware.radio.data-V1-ndk \
-    vendor.unisoc.hardware.radio.ims-V1-ndk \
-    vendor.unisoc.hardware.radio.messaging-V1-ndk \
-    vendor.unisoc.hardware.radio.modem-V1-ndk \
-    vendor.unisoc.hardware.radio.network-V1-ndk \
-    vendor.unisoc.hardware.radio.sim-V1-ndk \
-    vendor.unisoc.hardware.radio.voice-V1-ndk
-
-# ========================
-# NDK Interface Libraries
-# ========================
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.cplog_svc-V2-ndk \
-    vendor.sprd.hardware.enhance-V1-ndk \
-    vendor.sprd.hardware.hdcp-V1-ndk \
-    vendor.sprd.hardware.log-V1-ndk \
-    vendor.sprd.hardware.network-V1-ndk \
-    vendor.sprd.hardware.soter-V1-ndk \
-    vendor.sprd.hardware.trusty-V1-ndk \
-    vendor.sprd.hardware.tui-V1-ndk
+    vendor.nxp.eventprocessor@1.0-service \
+    vendor.nxp.nxpnfclegacy@1.0-service
 
 # ========================
 # Boot/Init Services
 # ========================
 PRODUCT_PACKAGES += \
-    create_splloader_dual_slot_byname_path \
     uniber \
-    watchdogd \
-    insmod-sh \
-    mmc_ffu
-
-# ========================
-# Security Tests
-# ========================
-PRODUCT_PACKAGES += \
-    boringssl_self_test32_vendor \
-    boringssl_self_test64_vendor
+    watchdogd
