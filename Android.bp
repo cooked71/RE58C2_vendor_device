@@ -454,6 +454,16 @@ cc_prebuilt_library_shared {
             srcs: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
         },
     },
+ shared_libs: [
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
 }
 
 cc_prebuilt_library_shared {
