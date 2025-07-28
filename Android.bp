@@ -470,14 +470,8 @@ cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     owner: "realme",
     vendor: true,
-    multilib: {
-        lib32: {
-            srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
-        },
-        lib64: {
-            srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
-        },
-    },
+    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],  // Only 64-bit version
+    compile_multilib: "64",  // Explicitly specify 64-bit only
     shared_libs: [
         "libhidlbase",
         "liblog",
