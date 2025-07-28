@@ -470,10 +470,12 @@ cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     owner: "realme",
     vendor: true,
-    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
-    target: {
-        android_arm: {
+    multilib: {
+        lib32: {
             srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
+        },
+        lib64: {
+            srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
         },
     },
     shared_libs: [
