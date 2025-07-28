@@ -476,7 +476,16 @@ cc_prebuilt_library_shared {
             srcs: ["proprietary/lib/vendor.nxp.eventprocessor@1.0.so"],
         },
     },
-    compile_multilib: "first",
+    shared_libs: [
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
 }
 
 // Graphics Libraries
