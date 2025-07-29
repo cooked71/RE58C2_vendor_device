@@ -762,3 +762,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     uniber \
     watchdogd
+
+# Kernel Modules (Critical ones only)
+PRODUCT_PACKAGES += \
+    mali_kbase.ko \
+    sprd_wlan_combo.ko \
+    sprd_thermal.ko \
+    sprd_camera.ko \
+    sprdbt_tty.ko
+
+# Module Management Utilities
+PRODUCT_PACKAGES += \
+    modprobe_vendor_dlkm \
+    depmod_vendor_dlkm
+
+# Init Services
+PRODUCT_PACKAGES += \
+    vendor_dlkm_modules_loading \
+    vendor_dlkm_early_init
