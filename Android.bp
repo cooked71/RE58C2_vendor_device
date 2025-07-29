@@ -649,14 +649,14 @@ prebuilt_etc {
 genrule {
     name: "generate_combined_modules_load",
     tools: ["grep"],
-    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/lib/modules/modules.load) $(location proprietary/vendor_dlkm/lib/modules/modules.load.cali) > $out",
+    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/lib/modules/modules.load) $(location proprietary/vendor_dlkm/lib/modules/modules.load.cali) > $(out)",
     srcs: [
         "proprietary/vendor_dlkm/lib/modules/modules.load",
         "proprietary/vendor_dlkm/lib/modules/modules.load.cali",
     ],
     out: ["modules.load.combined"],
- vendor: true,
- }
+    vendor: true,
+}
 
 // =============================================
 // SELinux Configuration
