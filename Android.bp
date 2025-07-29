@@ -718,6 +718,12 @@ genrule {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "vendor_dlkm_file_contexts",
+    src: "file_contexts",
+    sub_dir: "selinux",
+    vendor: true,
+}
 
 
 // =============================================
