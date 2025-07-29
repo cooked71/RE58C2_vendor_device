@@ -683,6 +683,48 @@ prebuilt_etc {
     relative_install_path: "../vendor_dlkm/etc/init",
     owner: "realme",
 }
+cc_prebuilt_library_shared {
+    name: "mali_kbase",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm/lib/modules",
+    strip: { none: true },
+    compile_multilib: "first",  // For 32/64-bit handling
+}
+
+prebuilt_etc {
+    name: "init_vendor_dlkm",
+    src: "proprietary/vendor_dlkm/etc/init/init.insmod.cfg",
+    sub_dir: "init",
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm/etc/init",
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_modules_load",
+    src: "proprietary/vendor_dlkm/etc/modules.load",
+    sub_dir: "",
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm/etc",
+    owner: "realme",
+}
+
+genrule {
+    name: "generate_combined_modules_load",
+    tools: ["grep"],
+    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/etc/modules.load) $(location proprietary/vendor_dlkm/etc/modules.load.cali) | sort -u > $out",
+    srcs: [
+        "proprietary/vendor_dlkm/etc/modules.load",
+        "proprietary/vendor_dlkm/etc/modules.load.cali",
+    ],
+    out: ["modules.load.combined"],
+    vendor: true,
+}
+
 
 
 // =============================================
