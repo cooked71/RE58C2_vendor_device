@@ -581,18 +581,11 @@ prebuilt_etc {
     owner: "realme",
 }
 
-// Critical hardware modules (example selection)
-cc_prebuilt_library_shared {
-    name: "mali_kbase",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
-    vendor: true,
-    proprietary: true,
-    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
-    strip: { none: true },
-}
+
 
 cc_prebuilt_library_shared {
     name: "sprd_wlan_combo", 
+    required: ["mali_kbase"],
     srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
     vendor: true,
     proprietary: true,
