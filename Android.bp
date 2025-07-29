@@ -544,7 +544,9 @@ prebuilt_etc {
     srcs: [":vendor_dlkm_modules_sources"],
     sub_dir: "lib/modules",
     filename_from_src: true,
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -553,7 +555,9 @@ prebuilt_etc {
     name: "vendor_dlkm_modules_load",
     src: "proprietary/vendor_dlkm/etc/modules.load",
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -561,7 +565,9 @@ prebuilt_etc {
     name: "vendor_dlkm_modules_load_cali",
     src: "proprietary/vendor_dlkm/etc/modules.load.cali", 
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -569,7 +575,9 @@ prebuilt_etc {
     name: "vendor_dlkm_modules_load_charger",
     src: "proprietary/vendor_dlkm/etc/modules.load.charger",
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -577,21 +585,27 @@ prebuilt_etc {
 cc_prebuilt_library_shared {
     name: "mali_kbase",
     srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     strip: { none: true },
 }
 
 cc_prebuilt_library_shared {
     name: "sprd_wlan_combo", 
     srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     strip: { none: true },
 }
 
 cc_prebuilt_library_shared {
     name: "sprd_thermal",
     srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     strip: { none: true },
 }
 
@@ -600,7 +614,9 @@ prebuilt_etc {
     name: "init_vendor_dlkm",
     src: "proprietary/vendor_dlkm/etc/init/init.insmod.cfg",
     sub_dir: "init",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -628,7 +644,9 @@ prebuilt_etc {
     name: "vendor_dlkm_build_prop",
     src: "proprietary/vendor_dlkm/etc/build.prop",
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -640,7 +658,9 @@ prebuilt_etc {
     name: "vendor_dlkm_fs_config_dirs",
     src: "proprietary/vendor_dlkm/etc/fs_config_dirs",
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
@@ -648,11 +668,21 @@ prebuilt_etc {
     name: "vendor_dlkm_fs_config_files",
     src: "proprietary/vendor_dlkm/etc/fs_config_files",
     sub_dir: "",
-    vendor_dlkm: true,
+    vendor: true,
+    proprietary: true,
+    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
     owner: "realme",
 }
 
-
+// device/realme/RE58C2/Android.bp
+prebuilt_etc {
+    name: "init.realme",
+    src: "proprietary/vendor_dlkm/etc/init/init.realme.rc",
+    sub_dir: "init",
+    vendor: true,
+    relative_install_path: "../vendor_dlkm/etc/init",
+    owner: "realme",
+}
 
 
 // =============================================
