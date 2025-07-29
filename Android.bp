@@ -718,13 +718,16 @@ genrule {
     vendor: true,
 }
 
+
+
 prebuilt_etc {
     name: "vendor_dlkm_file_contexts",
-    src: "file_contexts",
+    src: "sepolicy/vendor_dlkm/file_contexts",
     sub_dir: "selinux",
     vendor: true,
+    filename_from_src: true,
+    owner: "realme",
 }
-
 
 // =============================================
 // License
