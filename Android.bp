@@ -551,15 +551,7 @@ prebuilt_etc {
 }
 
 // Module loading configuration
-prebuilt_etc {
-    name: "vendor_dlkm_modules_load",
-    src: "proprietary/vendor_dlkm/etc/modules.load",
-    sub_dir: "",
-    vendor: true,
-    proprietary: true,
-    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
-    owner: "realme",
-}
+
 
 prebuilt_etc {
     name: "vendor_dlkm_modules_load_cali",
@@ -602,16 +594,6 @@ cc_prebuilt_library_shared {
     strip: { none: true },
 }
 
-// Init scripts
-prebuilt_etc {
-    name: "init_vendor_dlkm",
-    src: "proprietary/vendor_dlkm/etc/init/init.insmod.cfg",
-    sub_dir: "init",
-    vendor: true,
-    proprietary: true,
-    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
-    owner: "realme",
-}
 
 // =============================================
 // Module Loading Optimization
@@ -706,17 +688,7 @@ prebuilt_etc {
     owner: "realme",
 }
 
-genrule {
-    name: "generate_combined_modules_load",
-    tools: ["grep"],
-    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/etc/modules.load) $(location proprietary/vendor_dlkm/etc/modules.load.cali) | sort -u > $out",
-    srcs: [
-        "proprietary/vendor_dlkm/etc/modules.load",
-        "proprietary/vendor_dlkm/etc/modules.load.cali",
-    ],
-    out: ["modules.load.combined"],
-    vendor: true,
-}
+
 
 
 
