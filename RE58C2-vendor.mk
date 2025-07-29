@@ -485,6 +485,52 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
     vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.widevine.xml
 
+# =============================================
+# Vendor DLKM Modules
+# =============================================
+
+# Kernel modules (bulk copy)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.ko,vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+
+# Module metadata files
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.softdep
+
+# Module loading configs
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load.cali:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load.cali \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load.charger
+
+# Critical hardware modules (explicit copies)
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/mali_kbase.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/mali_kbase.ko \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_wlan_combo.ko \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_thermal.ko
+
+# Init configuration
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/init/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init/init.insmod.cfg
+
+# Build properties
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/build.prop
+
+# Filesystem config
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/fs_config_dirs:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/fs_config_dirs \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/fs_config_files:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/fs_config_files
+
+# =============================================
+# Critical Vendor DLKM Binaries
+# =============================================
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/bin/modprobe:$(TARGET_COPY_OUT_VENDOR_DLKM)/bin/modprobe
+
+
 # Inherit from vendor makefile
 $(call inherit-product, $(LOCAL_PATH)/RE58C2-vendor.mk)
 
