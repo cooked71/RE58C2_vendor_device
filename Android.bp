@@ -545,7 +545,6 @@ prebuilt_etc {
     sub_dir: "lib/modules",
     filename_from_src: true,
     vendor true,
-
     owner: "realme",
 }
 
@@ -555,7 +554,6 @@ prebuilt_etc {
     src: "proprietary/vendor_dlkm/lib/modules/modules.load",
     sub_dir: "lib/modules",
     vendor true,
-
     owner: "realme",
 }
 
@@ -564,7 +562,6 @@ prebuilt_etc {
     src: "proprietary/vendor_dlkm/lib/modules/modules.load.cali",
     sub_dir: "lib/modules",
     vendor true,
-
     owner: "realme",
 }
 
@@ -573,7 +570,6 @@ prebuilt_etc {
     src: "proprietary/vendor_dlkm/lib/modules/modules.load.charger",
     sub_dir: "lib/modules",
     vendor true,
-
     owner: "realme",
 }
 
@@ -582,7 +578,6 @@ cc_prebuilt_library_shared {
     name: "sprd_wlan_combo",
     srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
     vendor true,
-
     relative_install_path: "lib/modules",
     strip: { none: true },
 }
@@ -591,7 +586,6 @@ cc_prebuilt_library_shared {
     name: "sprd_thermal",
     srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
     vendor true,
-
     relative_install_path: "lib/modules",
     strip: { none: true },
 }
@@ -600,7 +594,6 @@ cc_prebuilt_library_shared {
     name: "mali_kbase",
     srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
     vendor true,
-
     relative_install_path: "lib/modules",
     strip: { none: true },
 }
@@ -613,7 +606,6 @@ prebuilt_etc {
     name: "vendor_dlkm_build_prop",
     src: "proprietary/vendor_dlkm/etc/build.prop",
     vendor true,
-
     sub_dir: "etc",
     owner: "realme",
 }
@@ -622,7 +614,6 @@ prebuilt_etc {
     name: "vendor_dlkm_fs_config_dirs",
     src: "proprietary/vendor_dlkm/etc/fs_config_dirs",
     vendor true,
-
     sub_dir: "etc",
     owner: "realme",
 }
@@ -631,7 +622,6 @@ prebuilt_etc {
     name: "vendor_dlkm_fs_config_files",
     src: "proprietary/vendor_dlkm/etc/fs_config_files",
     vendor true,
-
     sub_dir: "etc",
     owner: "realme",
 }
@@ -640,7 +630,6 @@ prebuilt_etc {
     name: "init.realme.rc",
     src: "proprietary/vendor_dlkm/etc/init.realme.rc",
     vendor true,
-
     sub_dir: "etc",
     owner: "realme",
 }
@@ -649,7 +638,6 @@ prebuilt_etc {
     name: "init_vendor_dlkm",
     src: "proprietary/vendor_dlkm/lib/modules/init.insmod.cfg",
     vendor true,
-
     sub_dir: "lib/modules",
     owner: "realme",
 }
@@ -668,7 +656,6 @@ genrule {
     ],
     out: ["modules.load.combined"],
     vendor true,
-
 }
 
 // =============================================
@@ -679,7 +666,6 @@ prebuilt_etc {
     name: "vendor_dlkm_file_contexts",
     src: "sepolicy/vendor_dlkm/file_contexts",
     vendor true,
-
     sub_dir: "etc/selinux",
     owner: "realme",
 }
