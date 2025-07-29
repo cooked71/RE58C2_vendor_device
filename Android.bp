@@ -599,18 +599,18 @@ cc_prebuilt_library_shared {
 // Module Loading Optimization
 // =============================================
 
-// Generate combined modules.load
+/// Fixed genrule for modules.load
 genrule {
     name: "generate_combined_modules_load",
     tools: ["grep"],
-    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/etc/modules.load) $(location proprietary/vendor_dlkm/etc/modules.load.cali) | sort -u > $out",
+    cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/etc/modules.load) $(location proprietary/vendor_dlkm/etc/modules.load.cali) > $out",
     srcs: [
         "proprietary/vendor_dlkm/etc/modules.load",
         "proprietary/vendor_dlkm/etc/modules.load.cali",
     ],
     out: ["modules.load.combined"],
+    vendor: true,
 }
-
 // =============================================
 // Build Properties
 // =============================================
@@ -618,10 +618,8 @@ genrule {
 prebuilt_etc {
     name: "vendor_dlkm_build_prop",
     src: "proprietary/vendor_dlkm/etc/build.prop",
-    sub_dir: "",
     vendor: true,
-    proprietary: true,
-    relative_install_path: "../vendor_dlkm",  // This ensures files go to vendor_dlkm partition
+    relative_install_path: "vendor_dlkm/etc",  // Not ../vendor_dlkm
     owner: "realme",
 }
 
@@ -671,10 +669,8 @@ cc_prebuilt_library_shared {
 prebuilt_etc {
     name: "init_vendor_dlkm",
     src: "proprietary/vendor_dlkm/etc/init/init.insmod.cfg",
-    sub_dir: "init",
     vendor: true,
-    proprietary: true,
-    relative_install_path: "../vendor_dlkm/etc/init",
+    relative_install_path: "vendor_dlkm/etc/init",
     owner: "realme",
 }
 
@@ -691,16 +687,14 @@ prebuilt_etc {
 
 
 
-
+// For file_contexts (create if missing)
 prebuilt_etc {
     name: "vendor_dlkm_file_contexts",
     src: "sepolicy/vendor_dlkm/file_contexts",
-    sub_dir: "selinux",
     vendor: true,
-    filename_from_src: true,
+    relative_install_path: "vendor_dlkm/etc/selinux",
     owner: "realme",
 }
-
 // =============================================
 // License
 // =============================================
