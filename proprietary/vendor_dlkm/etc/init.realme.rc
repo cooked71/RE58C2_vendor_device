@@ -1,8 +1,22 @@
 # device/realme/RE58C2/proprietary/vendor_dlkm/etc/init/init.realme.rc
 on early-init
-    # Load vendor_dlkm modules
-    exec u:r:vendor_dlkm:s0 root -- /system/bin/sh -c "for mod in /vendor_dlkm/lib/modules/*.ko; do insmod \$mod || exit 1; done"
+    # Critical modules that must load first (WiFi/GPU)
+    insmod /vendor_dlkm/lib/modules/sprd_wlan_combo.ko
+    insmod /vendor_dlkm/lib/modules/mali_kbase.ko
     
+    # Load remaining modules with error handling
+    exec u:r:kernel:s0 root -- /system/bin/sh -c \
+        "for mod in /vendor_dlkm/lib/modules/*.ko; do \
+            [ -f \$mod ] && insmod \$mod || { \
+                echo \"Failed to load \$mod\"; \
+                [ \"\$mod\" = \"/vendor_dlkm/lib/modules/sprd_thermal.ko\" ] || exit 1; \
+            }; \
+        done"
+
+on property:vold.decrypt=trigger_load_persist_props
+    # Load thermal module after decryption (if needed)
+    insmod /vendor_dlkm/lib/modules/sprd_thermal.ko
+
 on boot
-    # Late-init module loading if needed
+    # Load any modules that depend on system services
     load_modules /vendor_dlkm/etc/modules.load
