@@ -541,12 +541,15 @@ filegroup {
 // Module installation
 prebuilt_etc {
     name: "vendor_dlkm_modules",
-    srcs: [":vendor_dlkm_modules_sources"],
+    srcs: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
     sub_dir: "lib/modules",
-    filename_from_src: true,
+    // Remove the explicit filename_from_src line since it's redundant
     vendor: true,
     owner: "realme",
 }
+
+
+
 
 // Module loading configuration
 prebuilt_etc {
