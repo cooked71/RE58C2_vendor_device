@@ -533,6 +533,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor_dlkm/bin/modprobe:$(TARGET_COPY_OUT_VENDOR_DLKM)/bin/modprobe
 
+#load all libbs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,proprietary/vendor/lib,vendor/lib) \
+    $(call find-copy-subdir-files,*,proprietary/vendor/lib64,vendor/lib64)
+
+
+
 
 # Inherit from vendor makefile
 $(call inherit-product, $(LOCAL_PATH)/RE58C2-vendor.mk)
