@@ -536,11 +536,11 @@ PRODUCT_COPY_FILES += \
 
 #load the loadable
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,proprietary/vendor/bin,vendor/bin) \
-    $(call find-copy-subdir-files,*,proprietary/vendor/lib,vendor/lib) \
-    $(call find-copy-subdir-files,*,proprietary/vendor/lib64,vendor/lib64) \
-    $(call find-copy-subdir-files,*,proprietary/vendor/etc/init,vendor/etc/init) \
-    $(call find-copy-subdir-files,*,proprietary/vendor/etc/vintf/manifest,vendor/etc/vintf/manifest)
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
 
 
