@@ -480,11 +480,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
     vendor/realme/RE58C2/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# etc/vintf/
-PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
-    vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.widevine.xml
+
 
 # =============================================
 # Vendor DLKM Modules
@@ -541,7 +537,6 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init) \
-    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/vintf/manifest,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
 
 
