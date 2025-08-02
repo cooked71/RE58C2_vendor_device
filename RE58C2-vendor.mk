@@ -533,11 +533,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor_dlkm/bin/modprobe:$(TARGET_COPY_OUT_VENDOR_DLKM)/bin/modprobe
 
-#load all libbs
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,proprietary/vendor/lib,vendor/lib) \
-    $(call find-copy-subdir-files,*,proprietary/vendor/lib64,vendor/lib64)
 
+#load the loadable
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,proprietary/vendor/bin,vendor/bin) \
+    $(call find-copy-subdir-files,*,proprietary/vendor/lib,vendor/lib) \
+    $(call find-copy-subdir-files,*,proprietary/vendor/lib64,vendor/lib64) \
+    $(call find-copy-subdir-files,*,proprietary/vendor/etc/init,vendor/etc/init) \
+    $(call find-copy-subdir-files,*,proprietary/vendor/etc/vintf/manifest,vendor/etc/vintf/manifest)
 
 
 
