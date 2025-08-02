@@ -546,7 +546,7 @@ PRODUCT_COPY_FILES += \
 
 
 # Inherit from vendor makefile
-$(call inherit-product, $(LOCAL_PATH)/RE58C2-vendor.mk)
+# $(call inherit-product, $(LOCAL_PATH)/RE58C2-vendor.mk)
 
 # Define the source and target base directories
 #vendor_blobs_path := $(LOCAL_PATH)/proprietary/vendor
