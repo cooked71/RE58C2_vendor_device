@@ -446,6 +446,31 @@ cc_prebuilt_binary {
     compile_multilib: "64",
 }
 
+cc_prebuilt_binary {
+    name: "vendor.oppo.engnative.engineer@1.0-service",
+
+    srcs: ["vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+
+    shared_libs: [
+        "vendor.oppo.engnative.engineer@1.0",
+        "libbase",
+        "libcutils",
+        "libdumpstateutil",
+        "libhidlbase",
+        "libhidltransport",
+        "libhwbinder",
+        "liblog",
+        "libutils",
+        "libcrypto",
+        "librpmbclient",
+        "libteeproduction",
+        "libsecrpmbdata",
+        "libc++",
+    ],
+    vendor: true,
+    compile_multilib: "64",
+}
+
 // =============================================
 // Prebuilt Shared Libraries (Optimized)
 // =============================================
