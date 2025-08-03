@@ -530,11 +530,11 @@ PRODUCT_COPY_FILES += \
 
 
 #load the loadable
-#PRODUCT_COPY_FILES += \
-#    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
-#    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
-#    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
-#    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init) \
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init) \
 
 
 
