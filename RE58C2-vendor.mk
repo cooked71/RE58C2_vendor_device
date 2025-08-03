@@ -513,7 +513,7 @@ PRODUCT_COPY_FILES += \
 # Init configuration
 PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
-s
+
 # Build properties
 PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/build.prop:s$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/build.prop
