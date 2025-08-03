@@ -418,6 +418,7 @@ cc_prebuilt_library_shared {
 // =============================================
 // Prebuilt Binaries with init.rc (Corrected)
 // =============================================
+
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
