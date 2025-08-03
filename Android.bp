@@ -419,13 +419,21 @@ cc_prebuilt_library_shared {
 // Prebuilt Binaries with init.rc (Corrected)
 // =============================================
 cc_prebuilt_binary {
-    name: "vendor.oppo.engnative.engineer@1.0-service",
-    owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
-    relative_install_path: "hw",
+    name: "vendor.sprd.hardware.commondcs@1.0-service",
+    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
+
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhardware",
+        "libhidlbase",
+        "liblog",
+        "libsysutils",
+        "libutils",
+        "vendor.sprd.hardware.commondcs@1.0",
+    ],
     vendor: true,
-    compile_multilib: "64",
+    compile_multilib: "64", // force 64-bit only for vendor binaries
 }
 
 cc_prebuilt_binary {
