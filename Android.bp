@@ -517,30 +517,7 @@ cc_prebuilt_library_shared {
 }
 
 // Graphics Libraries
-cc_prebuilt_library_shared {
-    name: "libGLES_mali",
-    srcs: ["proprietary/vendor/lib64/libGLES_mali.so"],
-    // Dependencies detected by ELF checker
-    shared_libs: [
-        "android.hardware.graphics.allocator-V1-ndk",
-        "android.hardware.graphics.common-V3-ndk",
-        "android.hardware.graphics.mapper@4.0",
-        "libbase",
-        "libbinder_ndk",
-        "libc++",
-        "libcutils",
-        "libdmabufheap",
-        "libgralloctypes",
-        "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libnativewindow",
-        "libutils",
-        "libz",
-    ],
-    vendor: true,
-    compile_multilib: "64", // force 64-bit only
-}
+
 
 // Audio Libraries
 cc_prebuilt_library_shared {
