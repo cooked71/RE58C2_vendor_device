@@ -538,24 +538,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-# Inherit from vendor makefile
-# $(call inherit-product, $(LOCAL_PATH)/RE58C2-vendor.mk)
 
-# Define the source and target base directories
-#vendor_blobs_path := $(LOCAL_PATH)/proprietary/vendor
-#vendor_target_path := :$(TARGET_COPY_OUT_VENDOR)
-
-# Function to recursively include all vendor files
-#define include-vendor-files
-#$(foreach file,$(shell find $(1) -type f), \
-#    $(eval PRODUCT_COPY_FILES += $(file):$(subst $(1),$(2),$(file))))
-#endef
-
-# Include all vendor files
-#$(call include-vendor-files,$(vendor_blobs_path),$(vendor_target_path))
-
-
-# RE58C2-vendor.mk - Final Optimized Package List
 
 # ========================
 # Core Android HAL Services
