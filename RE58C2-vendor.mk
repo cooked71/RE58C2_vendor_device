@@ -500,9 +500,9 @@ PRODUCT_COPY_FILES += \
 
 # Module loading configs
 PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load.cali:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load.cali \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/modules.load.charger
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.load.cali:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load.cali \
+    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load.charger
 
 # Critical hardware modules (explicit copies)
 PRODUCT_COPY_FILES += \
