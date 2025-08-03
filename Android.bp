@@ -436,17 +436,8 @@ cc_prebuilt_binary {
     compile_multilib: "64", // force 64-bit only for vendor binaries
 }
 
-cc_prebuilt_binary {
-    name: "vendor.sprd.hardware.commondcs@1.0-service",
-    owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
-    relative_install_path: "hw",
-    vendor: true,
-    compile_multilib: "64",
-}
 
-c_prebuilt_binary {
+cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     owner: "realme",
     srcs: ["vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
@@ -467,7 +458,6 @@ c_prebuilt_binary {
         "libsecrpmbdata",
         "libc++",
     ],
-
     vendor: true,
     compile_multilib: "64",
     init_rc: ["vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
