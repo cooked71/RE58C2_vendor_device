@@ -446,7 +446,7 @@ cc_prebuilt_binary {
     compile_multilib: "64",
 }
 
-cc_prebuilt_binary {
+c_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
 
     srcs: ["vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
@@ -467,8 +467,10 @@ cc_prebuilt_binary {
         "libsecrpmbdata",
         "libc++",
     ],
+
     vendor: true,
     compile_multilib: "64",
+    init_rc: ["vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
 }
 
 // =============================================
