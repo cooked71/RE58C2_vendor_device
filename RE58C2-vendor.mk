@@ -526,8 +526,8 @@ PRODUCT_COPY_FILES += \
 # =============================================
 # Critical Vendor DLKM Binaries
 # =============================================
-PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/bin/modprobe:$(TARGET_COPY_OUT_VENDOR_DLKM)/bin/modprobe
+#PRODUCT_COPY_FILES += \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/bin/modprobe:$(TARGET_COPY_OUT_VENDOR_DLKM)/bin/modprobe
 
 
 #load the loadable
