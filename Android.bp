@@ -474,7 +474,7 @@ cc_prebuilt_binary {
 // Prebuilt Shared Libraries (Optimized)
 // =============================================
 
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "librpmbclient",
     srcs: ["proprietary/vendor/lib64/librpmbclient.so"],
     shared_libs: [
@@ -482,12 +482,15 @@ prebuilt_shared_library {
         "libm",
         "libdl",
     ],
-    check_elf_files: false,
+    strip: {
+        none: true,
+    },
     compile_multilib: "64",
+    check_elf_files: false,
     vendor: true,
 }
 
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "libteeproduction",
     srcs: ["proprietary/vendor/lib64/libteeproduction.so"],
     shared_libs: [
@@ -495,12 +498,15 @@ prebuilt_shared_library {
         "libm",
         "libdl",
     ],
-    check_elf_files: false,
+    strip: {
+        none: true,
+    },
     compile_multilib: "64",
+    check_elf_files: false,
     vendor: true,
 }
 
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "libsecrpmbdata",
     srcs: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
     shared_libs: [
@@ -508,12 +514,15 @@ prebuilt_shared_library {
         "libm",
         "libdl",
     ],
-    check_elf_files: false,
+    strip: {
+        none: true,
+    },
     compile_multilib: "64",
+    check_elf_files: false,
     vendor: true,
 }
 
-prebuilt_shared_library {
+cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
     srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     shared_libs: [
@@ -524,10 +533,14 @@ prebuilt_shared_library {
         "libm",
         "libdl",
     ],
-    check_elf_files: false,
+    strip: {
+        none: true,
+    },
     compile_multilib: "64",
+    check_elf_files: false,
     vendor: true,
 }
+
 
 // NFC Libraries (Multilib pattern)
 cc_prebuilt_library_shared {
