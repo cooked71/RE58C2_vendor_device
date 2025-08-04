@@ -441,7 +441,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     owner: "realme",
-    srcs: ["vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
     relative_install_path: "hw",
     shared_libs: [
         "vendor.oppo.engnative.engineer@1.0",
@@ -461,7 +461,7 @@ cc_prebuilt_binary {
     ],
     vendor: true,
     compile_multilib: "64",
-    init_rc: ["vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
+    init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
 }
 
 // =============================================
