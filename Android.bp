@@ -437,6 +437,12 @@ cc_prebuilt_binary {
     compile_multilib: "64", // force 64-bit only for vendor binaries
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.commondcs@1.0",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
+    vendor: true,
+    compile_multilib: "64",
+}
 
 cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
