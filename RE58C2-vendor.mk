@@ -479,6 +479,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 
+# Copy the init rc file to system_ext/etc/init
+PRODUCT_COPY_FILES += \
+    vendor/realme/RE58C2/proprietary/system_ext/etc/init/sprd_networkcontrol.rc:system_ext/etc/init/sprd_networkcontrol.rc
+
+
 
 # =============================================
 # Vendor DLKM Modules
@@ -787,3 +792,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_dlkm_modules_loading \
     vendor_dlkm_early_init
+    
+# Include the sprd_networkcontrol binary and libhidltransport shared library
+PRODUCT_PACKAGES += \
+    sprd_networkcontrol \
+    libhidltransport
+
+

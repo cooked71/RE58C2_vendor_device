@@ -508,6 +508,32 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
 }
 
+cc_prebuilt_library_shared {
+    name: "libhidltransport",
+    vendor_available: true,
+    srcs: ["proprietary/vendor/lib64/libhidltransport.so"],
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    stl: "none",
+}
+
+cc_prebuilt_binary {
+    name: "sprd_networkcontrol",
+    vendor_available: true,
+    srcs: ["proprietary/system_ext/bin/sprd_networkcontrol"],
+    installable: true,
+    system_ext_available: true,
+    filename: "sprd_networkcontrol",
+    install_dir: "/system_ext/bin",
+    shared_libs: [
+        "libhidltransport",
+        // add other libs if needed
+    ],
+}
+
+
 // =============================================
 // Configuration Files
 // =============================================
