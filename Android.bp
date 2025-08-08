@@ -685,34 +685,42 @@ cc_prebuilt_binary {
         "vendor.sprd.hardware.network@1.0",
     ],
 }
+// Prebuilt for vendor.sprd.hardware.network@1.0
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.network@1.0",
-    vendor_available: true,
-    srcs: [
-        "proprietary/vendor/lib64/vendor.sprd.hardware.network@1.0.so",
-    ],
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.network@1.0.so"],
     shared_libs: [
         "libc++",
         "libcutils",
         "libhidlbase",
         "liblog",
         "libutils",
+        "libhidltransport",
+        "libhidlmemory",
     ],
-    strip: {
-        all: true,
-    },
+    check_elf_files: true,
 }
 
+// Prebuilt for vendor.sprd.hardware.network-V1-ndk
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.network-V1-ndk",
-    vendor_available: true,
-    srcs: [
-        "proprietary/vendor/lib64/vendor.sprd.hardware.network-V1-ndk.so",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.network-V1-ndk.so"],
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libhidltransport",
+        "libhidlmemory",
     ],
-    strip: {
-        none: true,
-    },
+    check_elf_files: true,
 }
+
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.network@1.0-service",
     vendor_available: true,
