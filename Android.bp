@@ -710,6 +710,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.network-V1-ndk.so"],
     shared_libs: [
+        "libbinder_ndk",    // Added as per error log
         "libc++",
         "libcutils",
         "libhidlbase",
@@ -720,6 +721,7 @@ cc_prebuilt_library_shared {
     ],
     check_elf_files: true,
 }
+
 
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.network@1.0-service",
@@ -737,6 +739,7 @@ cc_prebuilt_binary {
         "libutils",
         "vendor.sprd.hardware.network@1.0",
     ],
+    check_elf_files: true,
 }
 
 
