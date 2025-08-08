@@ -779,5 +779,7 @@ PRODUCT_PACKAGES += \
 
 # Include the sprd_networkcontrol binary and libhidltransport shared library
 PRODUCT_PACKAGES += \
-    sprd_networkcontrol \
-    libhidltransport    
+    vendor.sprd.hardware.network@1.0 \
+    vendor.sprd.hardware.network-V1-ndk \
+    vendor.sprd.hardware.network@1.0-service
+ 
