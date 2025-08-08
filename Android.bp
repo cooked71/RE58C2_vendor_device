@@ -685,6 +685,35 @@ cc_prebuilt_binary {
         "vendor.sprd.hardware.network@1.0",
     ],
 }
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.network@1.0",
+    vendor_available: true,
+    srcs: [
+        "proprietary/vendor/lib64/libvendor.sprd.hardware.network@1.0.so",
+    ],
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.network-V1-ndk",
+    vendor_available: true,
+    srcs: [
+        "proprietary/vendor/lib64/libvendor.sprd.hardware.network-V1-ndk.so",
+    ],
+    strip: {
+        none: true,
+    },
+}
+cc_prebuilt_binary {
+    name: "vendor.sprd.hardware.network@1.0-service",
+    vendor_available: true,
+    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.network@1.0-service"],
+    strip: {
+        none: true,
+    },
+}
 
 
 // =============================================
