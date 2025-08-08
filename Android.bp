@@ -698,7 +698,6 @@ cc_prebuilt_library_shared {
         "liblog",
         "libutils",
     ],
-    vendor_available: true,
     strip: {
         all: true,
     },
