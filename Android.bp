@@ -517,6 +517,8 @@ cc_prebuilt_library_shared {
         none: true,
     },
     stl: "none",
+    installable: true,
+    relative_install_path: "vendor/lib64",
 }
 
 cc_prebuilt_binary {
@@ -524,12 +526,9 @@ cc_prebuilt_binary {
     vendor_available: true,
     srcs: ["proprietary/system_ext/bin/sprd_networkcontrol"],
     installable: true,
-    system_ext_available: true,
-    filename: "sprd_networkcontrol",
-    install_dir: "/system_ext/bin",
+    relative_install_path: "system_ext/bin",
     shared_libs: [
         "libhidltransport",
-        // add other libs if needed
     ],
 }
 
