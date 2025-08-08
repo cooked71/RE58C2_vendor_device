@@ -669,8 +669,20 @@ cc_prebuilt_binary {
     srcs: ["proprietary/system_ext/bin/sprd_networkcontrol"],
     installable: true,
     relative_install_path: "system_ext/bin",
-    shared_libs: [
+     shared_libs: [
+        "libbase",
+        "libbinder",
+        "libbinder_ndk",
+        "libc++",
+        "libcutils",
+        "libhidlbase",
         "libhidltransport",
+        "liblog",
+        "libnetutils",
+        "libsysutils",
+        "libutils",
+        "vendor.sprd.hardware.network-V1-ndk",
+        "vendor.sprd.hardware.network@1.0",
     ],
 }
 
