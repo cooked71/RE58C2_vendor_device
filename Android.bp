@@ -418,29 +418,59 @@ cc_prebuilt_library_shared {
 // =============================================
 // Prebuilt Binaries with init.rc (Corrected)
 // =============================================
+
+cc_prebuilt_binary {
+    name: "vendor.sprd.hardware.commondcs@1.0-service",
+    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
+
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhardware",
+        "libhidlbase",
+        "liblog",
+        "libsysutils",
+        "libutils",
+        "vendor.sprd.hardware.commondcs@1.0",
+    ],
+    vendor: true,
+    compile_multilib: "64", // force 64-bit only for vendor binaries
+}
+
+
+
 cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     owner: "realme",
     srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+    relative_install_path: "hw",
+    shared_libs: [
+        "vendor.oppo.engnative.engineer@1.0",
+        "libbase",
+        "libcutils",
+        "libdumpstateutil",
+        "libhidlbase",
+        "libhidltransport",
+        "libhwbinder",
+        "liblog",
+        "libutils",
+        "libcrypto",
+        "librpmbclient",
+        "libteeproduction",
+        "libsecrpmbdata",
+        "libc++",
+    ],
+    vendor: true,
+    compile_multilib: "64",
     init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
-    relative_install_path: "hw",
-    vendor: true,
-    compile_multilib: "64",
-}
-
-cc_prebuilt_binary {
-    name: "vendor.sprd.hardware.commondcs@1.0-service",
-    owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
-    init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
-    relative_install_path: "hw",
-    vendor: true,
-    compile_multilib: "64",
 }
 
 // =============================================
 // Prebuilt Shared Libraries (Optimized)
 // =============================================
+
+
+
 // NFC Libraries (Multilib pattern)
 cc_prebuilt_library_shared {
     name: "vendor.nxp.nxpnfclegacy@1.0",
@@ -491,21 +521,133 @@ cc_prebuilt_library_shared {
 }
 
 // Graphics Libraries
-cc_prebuilt_library_shared {
-    name: "libGLES_mali",
-    owner: "realme",
-    vendor: true,
-    srcs: ["proprietary/vendor/lib64/egl/libGLES_mali.so"],
-    compile_multilib: "64",
-}
+
 
 // Audio Libraries
 cc_prebuilt_library_shared {
     name: "libsprdaudiohalv7",
-    owner: "realme",
-    vendor: true,
     srcs: ["proprietary/vendor/lib64/libsprdaudiohalv7.so"],
+    // Needed dependencies from ELF check
+    shared_libs: [
+        "libc++",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    vendor: true,
+    compile_multilib: "64", // force 64-bit only
+}
+
+
+// ======================================================
+// vendor.sprd.hardware.commondcs@1.0
+// ======================================================
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.commondcs@1.0",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
     compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
+}
+
+// ======================================================
+// vendor.oppo.engnative.engineer@1.0
+// ======================================================
+cc_prebuilt_library_shared {
+    name: "vendor.oppo.engnative.engineer@1.0",
+    srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "librpmbclient",
+        "libteeproduction",
+        "libsecrpmbdata",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
+}
+
+// ======================================================
+// libsecrpmbdata
+// ======================================================
+cc_prebuilt_library_shared {
+    name: "libsecrpmbdata",
+    srcs: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
+    shared_libs: [
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
+}
+
+// ======================================================
+// librpmbclient
+// ======================================================
+cc_prebuilt_library_shared {
+    name: "librpmbclient",
+    srcs: ["proprietary/vendor/lib64/librpmbclient.so"],
+    shared_libs: [
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
+}
+
+// ======================================================
+// libteeproduction
+// ======================================================
+cc_prebuilt_library_shared {
+    name: "libteeproduction",
+    srcs: ["proprietary/vendor/lib64/libteeproduction.so"],
+    shared_libs: [
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    vendor: true,
 }
 
 cc_prebuilt_library_shared {
