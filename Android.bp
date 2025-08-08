@@ -691,8 +691,16 @@ cc_prebuilt_library_shared {
     srcs: [
         "proprietary/vendor/lib64/vendor.sprd.hardware.network@1.0.so",
     ],
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    vendor_available: true,
     strip: {
-        none: true,
+        all: true,
     },
 }
 
