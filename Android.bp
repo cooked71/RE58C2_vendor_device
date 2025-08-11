@@ -765,22 +765,6 @@ prebuilt_etc {
 // =============================================
 
 // Main module filegroup
-filegroup {
-    name: "vendor_dlkm_modules_sources",
-    srcs: [
-        "proprietary/vendor_dlkm/lib/modules/*.ko",
-        "proprietary/vendor_dlkm/lib/modules/modules.*",
-    ],
-}
-
-// Module installation
-copy_files {
-    name: "vendor_dlkm_modules",
-    srcs: [":vendor_dlkm_modules_sources"],
-    dest_dir: "lib/modules",
-    vendor: true,
-    owner: "realme",
-}
 
 
 
@@ -810,30 +794,979 @@ prebuilt_etc {
     owner: "realme",
 }
 
-// Individual kernel modules
-cc_prebuilt_library_shared {
-    name: "sprd_wlan_combo",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
+
+// Auto-generated prebuilt_etc modules for vendor DLKM kernel modules
+
+prebuilt_etc {
+    name: "vendor_dlkm_aes-ce-ccm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/aes-ce-ccm.ko",
+    sub_dir: "lib/modules",
     vendor: true,
-    relative_install_path: "lib/modules",
-    strip: { none: true },
+    owner: "realme",
 }
 
-cc_prebuilt_library_shared {
-    name: "sprd_thermal",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
+prebuilt_etc {
+    name: "vendor_dlkm_aes-neon-blk_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/aes-neon-blk.ko",
+    sub_dir: "lib/modules",
     vendor: true,
-    relative_install_path: "lib/modules",
-    strip: { none: true },
+    owner: "realme",
 }
 
-cc_prebuilt_library_shared {
-    name: "mali_kbase",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
+prebuilt_etc {
+    name: "vendor_dlkm_agdsp_access_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/agdsp_access.ko",
+    sub_dir: "lib/modules",
     vendor: true,
-    relative_install_path: "lib/modules",
-    strip: { none: true },
+    owner: "realme",
 }
+
+prebuilt_etc {
+    name: "vendor_dlkm_apsys-dvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/apsys-dvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_arc4_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/arc4.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_asix_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/asix.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_audio-dsp-dump_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/audio-dsp-dump.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_audio_mem_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/audio_mem.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_audio-pipe_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/audio-pipe.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_audio_sipc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/audio_sipc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ax88179_178a_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ax88179_178a.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_chipone-tddi_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/chipone-tddi.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_core_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/core.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_cpufreq_userspace_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/cpufreq_userspace.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_device_info_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/device_info.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_extcon-usb-gpio_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/extcon-usb-gpio.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_flash_ic_ocp8137_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/flash_ic_ocp8137.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_flash_ic_sgm3785_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/flash_ic_sgm3785.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_focaltech_ft8756_spi_ts_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/focaltech_ft8756_spi_ts.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_focaltech_touch-modules_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/focaltech_touch-modules.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_focaltech_tp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/focaltech_tp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ghash-ce_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ghash-ce.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_gnss_common_ctl_all_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/gnss_common_ctl_all.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_gnss_dbg_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/gnss_dbg.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_gnss_pmnotify_ctl_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/gnss_pmnotify_ctl.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_gpio_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/gpio.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_hardware_info_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/hardware_info.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_himax_mmi_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/himax_mmi.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_hung_task_enhance_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/hung_task_enhance.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_hyb_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/hyb.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ims_bridge_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ims_bridge.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ion_cma_heap_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ion_cma_heap.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ion_ipc_trusty_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ion_ipc_trusty.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_jiiov_fp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/jiiov_fp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_jpg_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/jpg.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_lcd_bias_adjust_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/lcd_bias_adjust.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_leds-sc27xx-bltc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/leds-sc27xx-bltc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_ledtrig-pattern_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/ledtrig-pattern.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_mali_kbase_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/mali_kbase.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_mcdt_hw_r2p0_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/mcdt_hw_r2p0.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_mipi_driver_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/mipi_driver.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_misc_sprd_uid_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/misc_sprd_uid.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_mmdvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/mmdvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_musb_hdrc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/musb_hdrc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_musb_sprd_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/musb_sprd.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_nq-nci_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/nq-nci.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_nvt_nt36xxx_spi_ts_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/nvt_nt36xxx_spi_ts.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_omnivision_tcm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/omnivision_tcm.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_oplus_chg_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/oplus_chg.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_op_rf_cable_monitor_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/op_rf_cable_monitor.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_phy-sprd-qogirl6_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/phy-sprd-qogirl6.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_pinctrl_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/pinctrl.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_pinctrl-sprd_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/pinctrl-sprd.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_pinctrl-sprd-qogirl6_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/pinctrl-sprd-qogirl6.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_pwm-sprd_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/pwm-sprd.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_rtc-sc27xx_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/rtc-sc27xx.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx_adc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx_adc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx_fuel_gauge_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx_fuel_gauge.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx-poweroff_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx-poweroff.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx_tsensor_thermal_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx_tsensor_thermal.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx_typec_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx_typec.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sc27xx-vibra_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sc27xx-vibra.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sha1-ce_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sha1-ce.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sipa_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sipa.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sipa-tuning_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sipa-tuning.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-card_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-card.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-codec-sc2730_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-codec-sc2730.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-codec-sc2730-power-dev_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-codec-sc2730-power-dev.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-codec-sc2730-power_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-codec-sc2730-power.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-dummy-codec_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-dummy-codec.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-pa-ucp1301_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-pa-ucp1301.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-pdm-r2p0_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-pdm-r2p0.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-vbc-fe_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-vbc-fe.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_snd-soc-sprd-vbc-v4_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/snd-soc-sprd-vbc-v4.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_spi-sprd_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/spi-sprd.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_apipe_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_apipe.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_audcp_boot_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_audcp_boot.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_audcp_dvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_audcp_dvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprdbt_tty_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprdbt_tty.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_camera_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_camera.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_camsys_pw_domain_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_camsys_pw_domain.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-compr-2stage-dma_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-compr-2stage-dma.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_cp_dvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_cp_dvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_cpp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_cpp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_cpu_cooling_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_cpu_cooling.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_ddr_dvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_ddr_dvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-dmaengine-pcm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-dmaengine-pcm.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-dma_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-dma.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-drm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-drm.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_flash_drv_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_flash_drv.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_fm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_fm.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_gpu_cooling_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_gpu_cooling.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-gsp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-gsp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-ion_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-ion.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_map_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_map.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_mipi_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_mipi.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-platform-pcm-routing_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-platform-pcm-routing.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_pmic_refout_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_pmic_refout.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_pmic_syscon_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_pmic_syscon.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_pmic_wdt_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_pmic_wdt.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_sensor_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_sensor.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_soc_id_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_soc_id.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_soc_thm_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_soc_thm.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_thermal_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-top-dvfs_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-top-dvfs.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_u_ether_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_u_ether.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_usb_f_rndis_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_usb_f_rndis.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_usbpinmux_qogirl6_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_usbpinmux_qogirl6.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd-vsp-pw-domain_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd-vsp-pw-domain.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_wdf_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_wdf.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_sprd_wlan_combo_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_thermal-generic-adc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/thermal-generic-adc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_trusty-tui_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/trusty-tui.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_twofish_common_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/twofish_common.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_twofish_generic_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/twofish_generic.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_unisoc-iommu_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/unisoc-iommu.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_virt-dma_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/virt-dma.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_vsp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/vsp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_wcn_bsp_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/wcn_bsp.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_zram_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/zram.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+prebuilt_etc {
+    name: "vendor_dlkm_zsmalloc_ko",
+    src: "proprietary/vendor_dlkm/lib/modules/zsmalloc.ko",
+    sub_dir: "lib/modules",
+    vendor: true,
+    owner: "realme",
+}
+
+
+
 
 // =============================================
 // Build Properties and Configurations
