@@ -776,7 +776,7 @@ filegroup {
 // Module installation
 prebuilt_etc {
     name: "vendor_dlkm_modules",
-    srcs: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
+    src: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
     sub_dir: "lib/modules",
     // Remove the explicit filename_from_src line since it's redundant
     vendor: true,
