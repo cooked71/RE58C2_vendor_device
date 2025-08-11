@@ -372,7 +372,7 @@ prebuilt_etc_xml {
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni",
     owner: "realme",
-    srcs: ["proprietary/lib/libois_algorithm_jni.so"],
+    src: ["proprietary/lib/libois_algorithm_jni.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
@@ -383,7 +383,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferpool@2.0.1",
     owner: "realme",
-    srcs: ["proprietary/lib/libstagefright_bufferpool@2.0.1.so"],
+    src: ["proprietary/lib/libstagefright_bufferpool@2.0.1.so"],
     compile_multilib: "32",
     vendor: true,
     strip: {
@@ -395,7 +395,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libois_algorithm_jni_64",
     owner: "realme",
-    srcs: ["proprietary/lib64/libois_algorithm_jni.so"],
+    src: ["proprietary/lib64/libois_algorithm_jni.so"],
     compile_multilib: "64",
     vendor: true,
     strip: {
@@ -406,7 +406,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferpool@2.0.1_64",
     owner: "realme",
-    srcs: ["proprietary/lib64/libstagefright_bufferpool@2.0.1.so"],
+    src: ["proprietary/lib64/libstagefright_bufferpool@2.0.1.so"],
     compile_multilib: "64",
     vendor: true,
     strip: {
@@ -421,7 +421,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.commondcs@1.0-service",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
+    src: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
 
     shared_libs: [
         "libc++",
@@ -442,7 +442,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.oppo.engnative.engineer@1.0-service",
     owner: "realme",
-    srcs: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+    src: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
     relative_install_path: "hw",
     shared_libs: [
         "vendor.oppo.engnative.engineer@1.0",
@@ -478,10 +478,10 @@ cc_prebuilt_library_shared {
     vendor: true,
     multilib: {
         lib32: {
-            srcs: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
+            src: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
         },
         lib64: {
-            srcs: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
+            src: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
         },
     },
  shared_libs: [
@@ -500,7 +500,7 @@ cc_prebuilt_library_shared {
     name: "vendor.nxp.eventprocessor@1.0",
     owner: "realme",
     vendor: true,
-    srcs: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
+    src: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
     compile_multilib: "64",
     shared_libs: [
         "libhidlbase",
@@ -526,7 +526,7 @@ cc_prebuilt_library_shared {
 // Audio Libraries
 cc_prebuilt_library_shared {
     name: "libsprdaudiohalv7",
-    srcs: ["proprietary/vendor/lib64/libsprdaudiohalv7.so"],
+    src: ["proprietary/vendor/lib64/libsprdaudiohalv7.so"],
     // Needed dependencies from ELF check
     shared_libs: [
         "libc++",
@@ -544,7 +544,7 @@ cc_prebuilt_library_shared {
 // ======================================================
 cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.commondcs@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
+    src: ["proprietary/vendor/lib64/vendor.sprd.hardware.commondcs@1.0.so"],
     shared_libs: [
         "libc++",
         "libcutils",
@@ -568,7 +568,7 @@ cc_prebuilt_library_shared {
 // ======================================================
 cc_prebuilt_library_shared {
     name: "vendor.oppo.engnative.engineer@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
+    src: ["proprietary/vendor/lib64/vendor.oppo.engnative.engineer@1.0.so"],
     shared_libs: [
         "libc++",
         "libcutils",
@@ -595,7 +595,7 @@ cc_prebuilt_library_shared {
 // ======================================================
 cc_prebuilt_library_shared {
     name: "libsecrpmbdata",
-    srcs: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
+    src: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
     shared_libs: [
         "libc++",
         "libc",
@@ -615,7 +615,7 @@ cc_prebuilt_library_shared {
 // ======================================================
 cc_prebuilt_library_shared {
     name: "librpmbclient",
-    srcs: ["proprietary/vendor/lib64/librpmbclient.so"],
+    src: ["proprietary/vendor/lib64/librpmbclient.so"],
     shared_libs: [
         "libc++",
         "libc",
@@ -635,7 +635,7 @@ cc_prebuilt_library_shared {
 // ======================================================
 cc_prebuilt_library_shared {
     name: "libteeproduction",
-    srcs: ["proprietary/vendor/lib64/libteeproduction.so"],
+    src: ["proprietary/vendor/lib64/libteeproduction.so"],
     shared_libs: [
         "libc++",
         "libc",
@@ -653,7 +653,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhidltransport",
     vendor_available: true,
-    srcs: ["proprietary/vendor/lib64/libhidltransport.so"],
+    src: ["proprietary/vendor/lib64/libhidltransport.so"],
     compile_multilib: "64",
     strip: {
         none: true,
@@ -666,7 +666,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_binary {
     name: "sprd_networkcontrol",
     vendor_available: true,
-    srcs: ["proprietary/system_ext/bin/sprd_networkcontrol"],
+    src: ["proprietary/system_ext/bin/sprd_networkcontrol"],
     installable: true,
     relative_install_path: "system_ext/bin",
      shared_libs: [
@@ -690,7 +690,7 @@ cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.network@1.0",
     vendor: true,
     compile_multilib: "64",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.network@1.0.so"],
+    src: ["proprietary/vendor/lib64/vendor.sprd.hardware.network@1.0.so"],
     shared_libs: [
         "libc++",
         "libcutils",
@@ -708,7 +708,7 @@ cc_prebuilt_library_shared {
     name: "vendor.sprd.hardware.network-V1-ndk",
     vendor: true,
     compile_multilib: "64",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.network-V1-ndk.so"],
+    src: ["proprietary/vendor/lib64/vendor.sprd.hardware.network-V1-ndk.so"],
     shared_libs: [
         "libbinder_ndk",    // Added as per error log
         "libc++",
@@ -725,7 +725,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.network@1.0-service",
-    srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.network@1.0-service"],
+    src: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.network@1.0-service"],
     vendor: true,
     compile_multilib: "64",
     shared_libs: [
@@ -767,7 +767,7 @@ prebuilt_etc {
 // Main module filegroup
 filegroup {
     name: "vendor_dlkm_modules_sources",
-    srcs: [
+    src: [
         "proprietary/vendor_dlkm/lib/modules/*.ko",
         "proprietary/vendor_dlkm/lib/modules/modules.*",
     ],
@@ -776,7 +776,7 @@ filegroup {
 // Module installation
 prebuilt_etc {
     name: "vendor_dlkm_modules",
-    srcs: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
+    src: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
     sub_dir: "lib/modules",
     // Remove the explicit filename_from_src line since it's redundant
     vendor: true,
@@ -814,7 +814,7 @@ prebuilt_etc {
 // Individual kernel modules
 cc_prebuilt_library_shared {
     name: "sprd_wlan_combo",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
+    src: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
     vendor: true,
     relative_install_path: "lib/modules",
     strip: { none: true },
@@ -822,7 +822,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "sprd_thermal",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
+    src: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
     vendor: true,
     relative_install_path: "lib/modules",
     strip: { none: true },
@@ -830,7 +830,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "mali_kbase",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
+    src: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
     vendor: true,
     relative_install_path: "lib/modules",
     strip: { none: true },
@@ -888,7 +888,7 @@ genrule {
     name: "generate_combined_modules_load",
     tools: ["grep"],
     cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/lib/modules/modules.load) $(location proprietary/vendor_dlkm/lib/modules/modules.load.cali) > $(out)",
-    srcs: [
+    src: [
         "proprietary/vendor_dlkm/lib/modules/modules.load",
         "proprietary/vendor_dlkm/lib/modules/modules.load.cali",
     ],
