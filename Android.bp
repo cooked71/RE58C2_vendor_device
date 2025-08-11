@@ -774,10 +774,10 @@ filegroup {
 }
 
 // Module installation
-prebuilt_etc {
+copy_files {
     name: "vendor_dlkm_modules",
-    src: ":vendor_dlkm_modules_sources",
-    sub_dir: "lib/modules",
+    srcs: [":vendor_dlkm_modules_sources"],
+    dest_dir: "lib/modules",
     vendor: true,
     owner: "realme",
 }
