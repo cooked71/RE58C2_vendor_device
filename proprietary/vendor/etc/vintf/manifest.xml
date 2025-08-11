@@ -175,12 +175,13 @@
         <fqname>@1.0::IConnmgr/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>vendor.sprd.hardware.enhance</name>
-        <interface>
-            <name>IEnhance</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>IEnhance/default</fqname>
+    <name>vendor.sprd.hardware.enhance</name>
+    <transport>hwbinder</transport>
+    <interface>
+        <name>IEnhance</name>
+        <instance>default</instance>
+    </interface>
+    <fqname>IEnhance/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.sprd.hardware.network</name>
