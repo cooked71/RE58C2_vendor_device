@@ -684,6 +684,8 @@ cc_prebuilt_binary {
         "vendor.sprd.hardware.network-V1-ndk",
         "vendor.sprd.hardware.network@1.0",
     ],
+    compile_multilib: "64",
+
 }
 // Prebuilt for vendor.sprd.hardware.network@1.0
 cc_prebuilt_library_shared {
