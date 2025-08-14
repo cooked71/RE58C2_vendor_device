@@ -1,0 +1,66 @@
+# Query: srcs
+# ContextLines: 1
+
+16 results - 1 file
+
+Android.bp:
+    1:     src: ["proprietary/vendor/lib64/libsecrpmbdata.so"],
+
+  397      owner: "realme",
+  398:     src: ["proprietary/lib64/libois_algorithm_jni.so"],
+  399      compile_multilib: "64",
+
+  408      owner: "realme",
+  409:     src: ["proprietary/lib64/libstagefright_bufferpool@2.0.1.so"],
+  410      compile_multilib: "64",
+
+  423      owner: "realme",
+  424:     src: ["proprietary/vendor/bin/hw/vendor.oppo.engnative.engineer@1.0-service"],
+  425      init_rc: ["proprietary/vendor/etc/init/vendor.oppo.engnative.engineer@1.0-service.rc"],
+
+  433      owner: "realme",
+  434:     src: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service"],
+  435      init_rc: ["proprietary/vendor/etc/init/vendor.sprd.hardware.commondcs@1.0-service.rc"],
+
+  450          lib32: {
+  451:             src: ["proprietary/lib/vendor.nxp.nxpnfclegacy@1.0.so"],
+  452          },
+  453          lib64: {
+  454:             src: ["proprietary/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
+  455          },
+
+  472      vendor: true,
+  473:     src: ["proprietary/lib64/vendor.nxp.eventprocessor@1.0.so"],
+  474      compile_multilib: "64",
+
+  497      vendor: true,
+  498:     src: ["proprietary/vendor/lib64/egl/libGLES_mali.so"],
+  499      compile_multilib: "64",
+
+  506      vendor: true,
+  507:     src: ["proprietary/vendor/lib64/libsprdaudiohalv7.so"],
+  508      compile_multilib: "64",
+
+  534      name: "vendor_dlkm_modules_sources",
+  535:     src: [
+  536          "proprietary/vendor_dlkm/lib/modules/*.ko",
+
+  543      name: "vendor_dlkm_modules",
+  544:     src: [":vendor_dlkm_modules_sources"],  // This implicitly sets filename_from_src: true
+  545      sub_dir: "lib/modules",
+
+  581      name: "sprd_wlan_combo",
+  582:     src: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
+  583      vendor: true,
+
+  589      name: "sprd_thermal",
+  590:     src: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
+  591      vendor: true,
+
+  597      name: "mali_kbase",
+  598:     src: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
+  599      vendor: true,
+
+  655      cmd: "grep -h -v ^# $(location proprietary/vendor_dlkm/lib/modules/modules.load) $(location proprietary/vendor_dlkm/lib/modules/modules.load.cali) > $(out)",
+  656:     src: [
+  657          "proprietary/vendor_dlkm/lib/modules/modules.load",
