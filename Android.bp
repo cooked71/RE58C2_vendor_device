@@ -665,7 +665,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "sprd_networkcontrol",
-    vendor_available: true,
+    vendor: true,
     srcs: ["proprietary/system_ext/bin/sprd_networkcontrol"],
     installable: true,
     relative_install_path: "system_ext/bin",
