@@ -543,7 +543,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
    
 VINTF_FRAGMENTS  += $(foreach manifest,$(HARDWARE_MANIFESTS),\
-   vendor/realme/RE58C2/proprietary/vendor-manifest/$(manifest).xml)
+   vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/$(manifest).xml)
 
 DEVICE_MANIFEST_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml
 DEVICE_MATRIX_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml
