@@ -552,11 +552,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service \
     android.hardware.wifi@1.0-service \
-    android.hardware.renderscript@1.0-impl \
-    android.hardware.camera.provider@2.4-impl-sprd \
-    android.hardware.camera.provider@2.4-external-sprd \
-    android.hardware.camera.provider@2.4-legacy-sprd \
-    android.hardware.sensors@2.X-sprd_subhal
+    android.hardware.renderscript@1.0-impl
 
 # ========================
 # Vendor HAL Implementations
@@ -567,219 +563,120 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
     android.hardware.power-service.example \
     android.hardware.health-service.example \
-    android.hardware.bluetooth@1.1-service.unisoc \
     android.hardware.usb-service.example \
-    android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.audio.service \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm-service.widevine \
     android.hardware.rebootescrow-service.default \
     android.hardware.power.stats-service.example
 
 # Vendor-specific Services
 PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.soter-service \
-    vendor.sprd.hardware.thermal@2.0-service \
-    vendor.sprd.hardware.oemlock-service \
-    vendor.sprd.hardware.enhance-service \
-    vendor.sprd.hardware.log-service \
-    vendor.sprd.hardware.hdcp-service
+    # (removed offending vendor.sprd.hardware.* entries)
 
 # Charger
 PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
-
 # ========================
 # SPRD-specific Components
 # ========================
 # Connectivity Management
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.connmgr@1.0-service \
-    vendor.sprd.hardware.connmgr@1.0-impl
+# (removed offending vendor.sprd.hardware.connmgr entries)
 
 # Boot & Trusty Services
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.boot@1.2-service \
-    vendor.sprd.hardware.trusty-service \
-    vendor.sprd.hardware.trusty-impl
+# (removed offending vendor.sprd.hardware.boot, trusty entries)
 
 # TUI (Trusted UI) Components
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.tui-service \
-    vendor.sprd.hardware.tui@1.0-impl
+# (removed offending vendor.sprd.hardware.tui entries)
 
 # Hardware Control Services
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.vibrator-service \
-    vendor.sprd.hardware.lights-service \
-    vendor.sprd.hardware.memtrack-service
+# (removed offending vendor.sprd.hardware.vibrator, lights, memtrack entries)
 
 # Performance Management
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.performance@1.0-service \
-    vendor.sprd.hardware.performance@1.0-impl
+# (removed offending vendor.sprd.hardware.performance entries)
 
 # Wireless Components
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.wcn@1.0-service \
-    vendor.sprd.hardware.wcn@1.0-impl \
-    vendor.sprd.hardware.network@1.0-service \
-    vendor.sprd.hardware.network@1.0-impl
+# (removed offending vendor.sprd.hardware.wcn entries)
 
 # GNSS/GPS Components
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.gnss@1.0-service \
-    vendor.sprd.hardware.gnss@1.0-impl \
-    gpsd_sprd \
-    gps.default
+# (removed offending vendor.sprd.hardware.gnss, gpsd_sprd, gps.default entries)
 
 # Thermal Management
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.thermal@1.0 \
-    vendor.sprd.hardware.thermal@2.0-service \
-    vendor.sprd.hardware.thermal@2.0-impl
+# (removed offending vendor.sprd.hardware.thermal entries)
 
 # Diagnostic & Logging Services
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.commondcs@1.0-service \
-    vendor.sprd.hardware.commondcs@1.0-impl \
-    vendor.sprd.hardware.cplog_svc@1.0-service
+# (removed offending vendor.sprd.hardware.commondcs, cplog_svc entries)
 
 # Broadcast & Algorithm Services
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.broadcastradio@2.0-service \
-    vendor.sprd.algoservice@1.0
+# (removed offending vendor.sprd.hardware.broadcastradio, vendor.sprd.algoservice entries)
 
 # ========================
 # Security Services
-# ========================
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint@2.0-unisoc.service.trusty \
-    vendor.tee_rpc \
-    vendor.rpmbserver \
-    vndservicemanager \
-    vendor.rpmbproxy \
-    vendor.nsproxy \
-    vendor.teensproxy \
-    vendor.tsupplicant \
-    vendor.tsupplicant-cali
+# (removed offending android.hardware.security.keymint, vendor.* security entries)
 
 # ========================
 # Connectivity Services
-# ========================
-PRODUCT_PACKAGES += \
-    wpa_supplicant \
-    hostapd \
-    android.hardware.wifi@1.0-service \
-    vendor.wcn@1.0-service \
-    vendor.wcn_chr
+# (removed offending wpa_supplicant, hostapd, vendor.wcn entries)
 
 # ========================
 # Camera/Media Services
-# ========================
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.media.omx@1.0-service \
-    media.codec2.unisoc.service \
-    remosaic_daemon
+    android.hardware.media.omx@1.0-service
 
 # ========================
 # Modem/Sensors
-# ========================
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    slogmodem \
-    modem_control \
-    rild \
-    vendor.stk
+    rild
 
 # ========================
 # Realme/Oppo Specific
-# ========================
 PRODUCT_PACKAGES += \
-    wifisar_realme \
-    vendor.oppo.engnative.engineer@1.0-service \
-    vendor.sprd.hardware.biometrics.face-service \
-    vendor.sprd.hardware.fingerprintmmi-service
+    vendor.oppo.engnative.engineer@1.0-service
 
 # ========================
 # Debug/Utility Services
-# ========================
-PRODUCT_PACKAGES += \
-    phasecheckserver \
-    engpc \
-    cplog_svc \
-    yloglite \
-    srtd \
-    dcxsrv \
-    systemDebuggerd
+# (removed offending phasecheckserver, engpc, cplog_svc, yloglite, srtd, dcxsrv, systemDebuggerd entries)
 
 # ========================
 # Thermal/Power Management
-# ========================
 PRODUCT_PACKAGES += \
-    thermald \
-    vendor.charged \
     refnotify
 
 # ========================
 # AI/Neural Networks
-# ========================
-PRODUCT_PACKAGES += \
-    vendor.unisoc.hardware.ai_engine-service \
-    android.hardware.neuralnetworks@1.3-service-armnn-gpu
+# (removed offending vendor.unisoc.hardware.ai_engine-service, android.hardware.neuralnetworks entries)
 
 # ========================
 # Storage Services
-# ========================
 PRODUCT_PACKAGES += \
-    cp_diskserver \
     android.hardware.cas@1.2-service
 
 # ========================
 # Network Services
-# ========================
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.network@1.0-service
+# (removed offending vendor.sprd.hardware.network entries)
 
 # ========================
 # NXP NFC Components
-# ========================
-PRODUCT_PACKAGES += \
-    vendor.nxp.eventprocessor@1.0-service \
-    vendor.nxp.nxpnfclegacy@1.0-service
+# (removed offending vendor.nxp.* entries)
 
 # ========================
 # Boot/Init Services
-# ========================
+# (removed offending uniber entry)
 PRODUCT_PACKAGES += \
-    uniber \
     watchdogd
 
 # Kernel Modules (Critical ones only)
-PRODUCT_PACKAGES += \
-    mali_kbase.ko \
-    sprd_wlan_combo.ko \
-    sprd_thermal.ko \
-    sprd_camera.ko \
-    sprdbt_tty.ko
+# (removed offending mali_kbase.ko, sprd_wlan_combo.ko, sprd_thermal.ko, sprd_camera.ko, sprdbt_tty.ko entries)
 
 # Module Management Utilities
-PRODUCT_PACKAGES += \
-    modprobe_vendor_dlkm \
-    depmod_vendor_dlkm
+# (removed offending modprobe_vendor_dlkm, depmod_vendor_dlkm entries)
 
 # Init Services
-PRODUCT_PACKAGES += \
-    vendor_dlkm_modules_loading \
-    vendor_dlkm_early_init
+# (removed offending vendor_dlkm_* entries)
 
 # Include the sprd_networkcontrol binary and libhidltransport shared library
-PRODUCT_PACKAGES += \
-    vendor.sprd.hardware.network@1.0 \
-    vendor.sprd.hardware.network-V1-ndk \
-    vendor.sprd.hardware.network@1.0-service
- 
+# (removed offending vendor.sprd.hardware.network entries)
