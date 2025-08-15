@@ -540,7 +540,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
-    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
 
 
 
@@ -550,8 +550,6 @@ PRODUCT_COPY_FILES += \
 # Core Android HAL Services
 # ========================
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service \
-    android.hardware.wifi@1.0-service \
     android.hardware.renderscript@1.0-impl
 
 # ========================
@@ -560,14 +558,12 @@ PRODUCT_PACKAGES += \
 
 # Hardware HAL Services
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.trusty \
     android.hardware.power-service.example \
     android.hardware.health-service.example \
     android.hardware.usb-service.example \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.audio.service \
     android.hardware.drm-service.clearkey \
-    android.hardware.rebootescrow-service.default \
     android.hardware.power.stats-service.example
 
 # Vendor-specific Services
