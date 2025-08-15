@@ -1528,23 +1528,15 @@ prebuilt_etc {
     owner: "realme",
 }
 
-// Gather all fragment XMLs inside manifest/ folder
-filegroup {
-    name: "realme_vintf_fragments",
-    srcs: ["manifest/*.xml"],
-}
-
-// VINTF fragments module
 vintf_fragments {
+    name: "realme_vintf_fragments",
+    srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
+}
+
+vintf_manifest {
     name: "realme_vintf",
-    manifest: ":realme_vintf_fragments",
-    manifest_xml: "manifest.xml",  // the main manifest.xml
+    manifest: "vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml",
+    fragments: [":realme_vintf_fragments"],
+    matrix: "vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml",
 }
-
-// Compatibility matrix module
-vintf_matrix {
-    name: "realme_compat_matrix",
-    matrix: "compatibility_matrix.xml",
-}
-
 
