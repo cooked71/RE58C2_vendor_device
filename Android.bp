@@ -1528,6 +1528,11 @@ prebuilt_etc {
     owner: "realme",
 }
 
+// =============================================
+// vintf  Configuration
+// =============================================
+
+
 vintf_fragments {
     name: "realme_vintf_fragments",
     srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
