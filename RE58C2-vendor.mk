@@ -540,11 +540,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
-    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
+    $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc/bin,$(TARGET_COPY_OUT_VENDOR)/etc/bin) \
    
 
-DEVICE_MANIFEST_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml
-DEVICE_MATRIX_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml
 
 
 
