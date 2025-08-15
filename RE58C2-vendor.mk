@@ -641,10 +641,6 @@ PRODUCT_PACKAGES += \
 # Debug/Utility Services
 # (removed offending phasecheckserver, engpc, cplog_svc, yloglite, srtd, dcxsrv, systemDebuggerd entries)
 
-# ========================
-# Thermal/Power Management
-PRODUCT_PACKAGES += \
-    refnotify
 
 # ========================
 # AI/Neural Networks
