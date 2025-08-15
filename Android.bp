@@ -1533,15 +1533,32 @@ prebuilt_etc {
 // =============================================
 
 
-vintf_fragments {
-    name: "realme_vintf_fragments",
-    srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
+// Install all VINTF manifest fragments
+filegroup {
+    name: "realme_vintf_xmls",
+    srcs: [
+        "vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml",
+    ],
 }
 
-vintf_manifest {
-    name: "realme_vintf",
-    manifest: "vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml",
-    fragments: [":realme_vintf_fragments"],
-    matrix: "vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml",
+// Install the main manifest.xml
+filegroup {
+    name: "realme_vintf_main_manifest",
+    srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml"],
+}
+
+// Copy all VINTF files to vendor manifests in the system image
+vendor_file {
+    name: "install_vintf_fragments",
+    src: ":realme_vintf_xmls",
+    target_dir: "etc/vintf/manifest",
+    filename_from_src: true,
+}
+
+vendor_file {
+    name: "install_vintf_manifest",
+    src: ":realme_vintf_main_manifest",
+    target_dir: "etc/vintf",
+    filename_from_src: true,
 }
 
