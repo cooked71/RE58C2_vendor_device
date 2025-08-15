@@ -1845,34 +1845,53 @@ prebuilt_etc {
 
 // Auto-generated prebuilt modules
 
-android_prebuilt_apk {
-    name: "Calculator",
-    apk: "proprietary/product/app/CalculatorGoogle/CalculatorGoogle.apk",
-    privileged: true,
-    certificate: "platform",
-    relative_install_path: "system/priv-app",
-}
 
+// Auto-generated prebuilt modules
+// Kernel modules
 
-android_prebuilt_apk {
-    name: "Phone",
-    apk: "proprietary/system/system/app/PhoneActivation/PhoneActivation.apk",
-    privileged: true,
-    certificate: "platform",
-    relative_install_path: "system/priv-app",
-}
-
-
-cc_prebuilt_binary {
-    name: "android.hardware.bluetooth@1.1-service.unisoc",
-    srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc"],
-    shared_libs: ["liblog.so", "libcutils.so", "libbase.so", "libutils.so", "libhardware.so", "libhidlbase.so", "android.hardware.bluetooth@1.1.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+cc_prebuilt_kernel_module {
+    name: "mali_kbase.ko",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
     installable: true,
-    relative_install_path: "vendor/bin",
+    relative_install_path: "vendor/lib/modules",
 }
 
 
-cc_prebuilt_library {
+cc_prebuilt_kernel_module {
+    name: "sprd_camera.ko",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_camera.ko"],
+    installable: true,
+    relative_install_path: "vendor/lib/modules",
+}
+
+
+cc_prebuilt_kernel_module {
+    name: "sprd_thermal.ko",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
+    installable: true,
+    relative_install_path: "vendor/lib/modules",
+}
+
+
+cc_prebuilt_kernel_module {
+    name: "sprd_wlan_combo.ko",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
+    installable: true,
+    relative_install_path: "vendor/lib/modules",
+}
+
+
+cc_prebuilt_kernel_module {
+    name: "sprdbt_tty.ko",
+    srcs: ["proprietary/vendor_dlkm/lib/modules/sprdbt_tty.ko"],
+    installable: true,
+    relative_install_path: "vendor/lib/modules",
+}
+
+
+// Shared libraries
+
+cc_prebuilt_library_shared {
     name: "android.hardware.camera.provider@2.4-external-sprd",
     srcs: ["proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external-sprd.so"],
     shared_libs: ["android.hardware.camera.common@1.0.so", "android.hardware.camera.device@1.0.so", "android.hardware.camera.device@3.2.so", "android.hardware.camera.device@3.3.so", "android.hardware.camera.device@3.4.so", "android.hardware.camera.device@3.5.so", "android.hardware.camera.device@3.6.so", "android.hardware.camera.provider@2.4.so", "android.hardware.graphics.mapper@2.0.so", "android.hardware.graphics.mapper@3.0.so", "android.hardware.graphics.mapper@4.0.so", "android.hidl.allocator@1.0.so", "android.hidl.memory@1.0.so", "camera.device@3.3-impl-sprd.so", "camera.device@3.4-external-impl-sprd.so", "camera.device@3.4-impl-sprd.so", "camera.device@3.5-external-impl-sprd.so", "camera.device@3.5-impl-sprd.so", "camera.device@3.6-external-impl-sprd.so", "libcamera_metadata.so", "libcutils.so", "libhardware.so", "libhidlbase.so", "liblog.so", "libtinyxml2.so", "libutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
@@ -1882,7 +1901,7 @@ cc_prebuilt_library {
 }
 
 
-cc_prebuilt_library {
+cc_prebuilt_library_shared {
     name: "android.hardware.camera.provider@2.4-impl-sprd",
     srcs: ["proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-sprd.so"],
     shared_libs: ["android.hardware.camera.common@1.0.so", "android.hardware.camera.device@1.0.so", "android.hardware.camera.device@3.2.so", "android.hardware.camera.device@3.3.so", "android.hardware.camera.device@3.4.so", "android.hardware.camera.device@3.5.so", "android.hardware.camera.provider@2.4.so", "android.hardware.camera.provider@2.4-external-sprd.so", "android.hardware.camera.provider@2.4-legacy-sprd.so", "android.hardware.graphics.mapper@2.0.so", "android.hardware.graphics.mapper@3.0.so", "android.hardware.graphics.mapper@4.0.so", "android.hidl.allocator@1.0.so", "android.hidl.memory@1.0.so", "camera.device@1.0-impl.so", "camera.device@3.2-impl-sprd.so", "camera.device@3.3-impl-sprd.so", "camera.device@3.4-external-impl-sprd.so", "camera.device@3.4-impl-sprd.so", "camera.device@3.5-external-impl-sprd.so", "camera.device@3.5-impl-sprd.so", "camera.device@3.6-external-impl-sprd.so", "libcamera_metadata.so", "libcutils.so", "libhardware.so", "libhidlbase.so", "liblog.so", "libtinyxml2.so", "libutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
@@ -1892,13 +1911,134 @@ cc_prebuilt_library {
 }
 
 
-cc_prebuilt_library {
+cc_prebuilt_library_shared {
     name: "android.hardware.camera.provider@2.4-legacy-sprd",
     srcs: ["proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy-sprd.so"],
     shared_libs: ["android.hardware.camera.common@1.0.so", "android.hardware.camera.device@1.0.so", "android.hardware.camera.device@3.2.so", "android.hardware.camera.device@3.3.so", "android.hardware.camera.device@3.4.so", "android.hardware.camera.device@3.5.so", "android.hardware.camera.provider@2.4.so", "android.hardware.graphics.mapper@2.0.so", "android.hardware.graphics.mapper@3.0.so", "android.hardware.graphics.mapper@4.0.so", "android.hidl.allocator@1.0.so", "android.hidl.memory@1.0.so", "camera.device@1.0-impl.so", "camera.device@3.2-impl-sprd.so", "camera.device@3.3-impl-sprd.so", "camera.device@3.4-impl-sprd.so", "camera.device@3.5-impl-sprd.so", "libcamera_metadata.so", "libcutils.so", "libhardware.so", "libhidlbase.so", "liblog.so", "libutils.so", "libatci.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
     installable: true,
     relative_install_path: "system/bin",
     compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.sensors@2.X-sprd_subhal",
+    srcs: ["proprietary/vendor/lib64/android.hardware.sensors@2.X-sprd_subhal.so"],
+    shared_libs: ["android.hardware.sensors@1.0.so", "android.hardware.sensors@2.0.so", "android.hardware.sensors@2.0-ScopedWakelock.so", "android.hardware.sensors@2.1.so", "libbase.so", "libcutils.so", "libfmq.so", "libhardware.so", "libhidlbase.so", "liblog.so", "libpower.so", "libutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "bootctrl",
+    srcs: ["proprietary/vendor/lib64/hw/bootctrl.default.so"],
+    shared_libs: ["android.hardware.boot@1.1.so", "libbase.so", "liblog.so", "libhardware.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "gps.default",
+    srcs: ["proprietary/vendor/lib64/hw/gps.default.so"],
+    shared_libs: ["libc.so", "libutils.so", "libcutils.so", "libhardware.so", "liblog.so", "libpower.so", "libm.so", "libandroid_net.so", "libbase.so", "libc++.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.algoservice@1.0",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.algoservice@1.0.so"],
+    shared_libs: ["libhidlbase.so", "liblog.so", "libutils.so", "libcutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.connmgr@1.0-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so"],
+    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "vendor.sprd.hardware.connmgr@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.gnss@1.0-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so"],
+    shared_libs: ["liblog.so", "libhidlbase.so", "libutils.so", "libhardware.so", "android.hardware.gnss@2.1.so", "vendor.sprd.hardware.gnss@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.network@1.0-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.network@1.0-impl.so"],
+    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "libbase.so", "libhardware.so", "libsysutils.so", "vendor.sprd.hardware.network@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.thermal@1.0",
+    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.thermal@1.0.so"],
+    shared_libs: ["android.hardware.thermal@1.0.so", "android.hardware.thermal@2.0.so", "libhidlbase.so", "liblog.so", "libutils.so", "libcutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.thermal@2.0-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so"],
+    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "libbase.so", "libhardware.so", "vendor.sprd.hardware.thermal@1.0.so", "vendor.sprd.hardware.thermal@2.0.so", "android.hardware.thermal@1.0.so", "android.hardware.thermal@2.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.trusty-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.trusty-impl.so"],
+    shared_libs: ["libclang_rt.ubsan_standalone-aarch64-android.so", "liblog.so", "libcutils.so", "libutils.so", "libbase.so", "libhidlbase.so", "libbinder_ndk.so", "vendor.sprd.hardware.trusty-V1-ndk.so", "libtrusty.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+cc_prebuilt_library_shared {
+    name: "vendor.sprd.hardware.wcn@1.0-impl",
+    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so"],
+    shared_libs: ["libhidlbase.so", "libutils.so", "vendor.sprd.hardware.wcn@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "system/bin",
+    compile_multilib: "64",
+}
+
+
+// Binaries
+
+cc_prebuilt_binary {
+    name: "android.hardware.bluetooth@1.1-service.unisoc",
+    srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc"],
+    shared_libs: ["liblog.so", "libcutils.so", "libbase.so", "libutils.so", "libhardware.so", "libhidlbase.so", "android.hardware.bluetooth@1.1.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
+    installable: true,
+    relative_install_path: "vendor/bin",
 }
 
 
@@ -1938,26 +2078,6 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "android.hardware.sensors@2.X-sprd_subhal",
-    srcs: ["proprietary/vendor/lib64/android.hardware.sensors@2.X-sprd_subhal.so"],
-    shared_libs: ["android.hardware.sensors@1.0.so", "android.hardware.sensors@2.0.so", "android.hardware.sensors@2.0-ScopedWakelock.so", "android.hardware.sensors@2.1.so", "libbase.so", "libcutils.so", "libfmq.so", "libhardware.so", "libhidlbase.so", "liblog.so", "libpower.so", "libutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
-cc_prebuilt_library {
-    name: "bootctrl",
-    srcs: ["proprietary/vendor/lib64/hw/bootctrl.default.so"],
-    shared_libs: ["android.hardware.boot@1.1.so", "libbase.so", "liblog.so", "libhardware.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "cp_diskserver",
     srcs: ["proprietary/vendor/bin/cp_diskserver"],
@@ -1994,30 +2114,12 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "gps.default",
-    srcs: ["proprietary/vendor/lib64/hw/gps.default.so"],
-    shared_libs: ["libc.so", "libutils.so", "libcutils.so", "libhardware.so", "liblog.so", "libpower.so", "libm.so", "libandroid_net.so", "libbase.so", "libc++.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "hostapd",
     srcs: ["proprietary/vendor/bin/hw/hostapd"],
     shared_libs: ["libcutils.so", "liblog.so", "libcrypto.so", "libssl.so", "libnl.so", "android.hardware.wifi.hostapd-V1-ndk.so", "libbase.so", "libutils.so", "libbinder_ndk.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
     installable: true,
     relative_install_path: "vendor/bin",
-}
-
-
-cc_prebuilt_kernel_module {
-    name: "mali_kbase.ko",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/mali_kbase.ko"],
-    installable: true,
-    relative_install_path: "vendor/lib/modules",
 }
 
 
@@ -2084,38 +2186,6 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_kernel_module {
-    name: "sprd_camera.ko",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_camera.ko"],
-    installable: true,
-    relative_install_path: "vendor/lib/modules",
-}
-
-
-cc_prebuilt_kernel_module {
-    name: "sprd_thermal.ko",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko"],
-    installable: true,
-    relative_install_path: "vendor/lib/modules",
-}
-
-
-cc_prebuilt_kernel_module {
-    name: "sprd_wlan_combo.ko",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko"],
-    installable: true,
-    relative_install_path: "vendor/lib/modules",
-}
-
-
-cc_prebuilt_kernel_module {
-    name: "sprdbt_tty.ko",
-    srcs: ["proprietary/vendor_dlkm/lib/modules/sprdbt_tty.ko"],
-    installable: true,
-    relative_install_path: "vendor/lib/modules",
-}
-
-
 cc_prebuilt_binary {
     name: "srtd",
     srcs: ["proprietary/vendor/bin/srtd"],
@@ -2152,16 +2222,6 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "vendor.sprd.algoservice@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.algoservice@1.0.so"],
-    shared_libs: ["libhidlbase.so", "liblog.so", "libutils.so", "libcutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.biometrics.face-service",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.biometrics.face-service"],
@@ -2189,16 +2249,6 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.connmgr@1.0-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so"],
-    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "vendor.sprd.hardware.connmgr@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.connmgr@1.0-service",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.connmgr@1.0-service"],
@@ -2223,16 +2273,6 @@ cc_prebuilt_binary {
     shared_libs: ["liblog.so", "libbase.so", "libbinder_ndk.so", "vendor.sprd.hardware.fingerprintmmi-V1-ndk.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
     installable: true,
     relative_install_path: "vendor/bin",
-}
-
-
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.gnss@1.0-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so"],
-    shared_libs: ["liblog.so", "libhidlbase.so", "libutils.so", "libhardware.so", "android.hardware.gnss@2.1.so", "vendor.sprd.hardware.gnss@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
 }
 
 
@@ -2272,16 +2312,6 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.network@1.0-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.network@1.0-impl.so"],
-    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "libbase.so", "libhardware.so", "libsysutils.so", "vendor.sprd.hardware.network@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.oemlock-service",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.oemlock-service"],
@@ -2309,42 +2339,12 @@ cc_prebuilt_binary {
 }
 
 
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.thermal@1.0",
-    srcs: ["proprietary/vendor/lib64/vendor.sprd.hardware.thermal@1.0.so"],
-    shared_libs: ["android.hardware.thermal@1.0.so", "android.hardware.thermal@2.0.so", "libhidlbase.so", "liblog.so", "libutils.so", "libcutils.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.thermal@2.0-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so"],
-    shared_libs: ["libhidlbase.so", "libutils.so", "libcutils.so", "liblog.so", "libbase.so", "libhardware.so", "vendor.sprd.hardware.thermal@1.0.so", "vendor.sprd.hardware.thermal@2.0.so", "android.hardware.thermal@1.0.so", "android.hardware.thermal@2.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
-}
-
-
 cc_prebuilt_binary {
     name: "vendor.sprd.hardware.thermal@2.0-service",
     srcs: ["proprietary/vendor/bin/hw/vendor.sprd.hardware.thermal@2.0-service"],
     shared_libs: ["liblog.so", "libutils.so", "libbase.so", "libhardware.so", "libhidlbase.so", "android.hardware.thermal@1.0.so", "android.hardware.thermal@2.0.so", "vendor.sprd.hardware.thermal@1.0.so", "vendor.sprd.hardware.thermal@2.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
     installable: true,
     relative_install_path: "vendor/bin",
-}
-
-
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.trusty-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.trusty-impl.so"],
-    shared_libs: ["libclang_rt.ubsan_standalone-aarch64-android.so", "liblog.so", "libcutils.so", "libutils.so", "libbase.so", "libhidlbase.so", "libbinder_ndk.so", "vendor.sprd.hardware.trusty-V1-ndk.so", "libtrusty.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
 }
 
 
@@ -2372,16 +2372,6 @@ cc_prebuilt_binary {
     shared_libs: ["libbase.so", "libbinder_ndk.so", "android.hardware.vibrator-V2-ndk.so", "liblog.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
     installable: true,
     relative_install_path: "vendor/bin",
-}
-
-
-cc_prebuilt_library {
-    name: "vendor.sprd.hardware.wcn@1.0-impl",
-    srcs: ["proprietary/vendor/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so"],
-    shared_libs: ["libhidlbase.so", "libutils.so", "vendor.sprd.hardware.wcn@1.0.so", "libc++.so", "libc.so", "libm.so", "libdl.so"],
-    installable: true,
-    relative_install_path: "system/bin",
-    compile_multilib: "64",
 }
 
 
@@ -2429,3 +2419,22 @@ cc_prebuilt_binary {
     relative_install_path: "vendor/bin",
 }
 
+
+// APKs and JARs
+
+android_app_import {
+    name: "Calculator",
+    apk: "proprietary/product/app/CalculatorGoogle/CalculatorGoogle.apk",
+    privileged: true,
+    certificate: "platform",
+    relative_install_path: "system/priv-app",
+}
+
+
+android_app_import {
+    name: "Phone",
+    apk: "proprietary/system/system/app/PhoneActivation/PhoneActivation.apk",
+    privileged: true,
+    certificate: "platform",
+    relative_install_path: "system/priv-app",
+}
