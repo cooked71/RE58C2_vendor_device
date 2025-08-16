@@ -1535,7 +1535,7 @@ prebuilt_etc {
 // Install all fragments as raw etc files into vintf/manifest
 prebuilt_etc {
     name: "realme_vintf_fragments",
-    src: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
+    srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
     sub_dir: "vintf/manifest",
     filename_from_src: true,
 }
