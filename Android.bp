@@ -1532,25 +1532,24 @@ prebuilt_etc {
 // vintf  Configuration
 // =============================================
 
-// Install all fragments as raw etc files into vintf/manifest
+// All fragment XMLs in manifest/ directory
 prebuilt_etc {
     name: "realme_vintf_fragments",
-    srcs: ["vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml"],
+    srcs: ["proprietary/vendor-manifest/manifest/*.xml"],
     sub_dir: "vintf/manifest",
-    filename_from_src: true,
 }
 
-// Main manifest.xml
+// Single main manifest
 prebuilt_etc_xml {
     name: "realme_vintf_manifest",
-    src: "vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml",
+    src: "proprietary/vendor-manifest/manifest.xml",
     sub_dir: "vintf",
 }
 
-// Compatibility matrix
+// Single compatibility matrix
 prebuilt_etc_xml {
     name: "realme_vintf_matrix",
-    src: "vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml",
+    src: "proprietary/vendor-manifest/compatibility_matrix.xml",
     sub_dir: "vintf",
 }
 
