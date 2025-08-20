@@ -498,8 +498,8 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
 # Copy all DLKM kernel modules
-PRODUCT_COPY_FILES += \
-   $(call find-copy-subdir-files,*.ko,vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+#PRODUCT_COPY_FILES += \
+#   $(call find-copy-subdir-files,*.ko,vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
 
    
 
