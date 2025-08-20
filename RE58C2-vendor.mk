@@ -518,10 +518,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load.charger
 
 # Critical hardware modules (explicit copies)
-PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/mali_kbase.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/mali_kbase.ko \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_wlan_combo.ko \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_thermal.ko
+#PRODUCT_COPY_FILES += \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/mali_kbase.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/mali_kbase.ko \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_wlan_combo.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_wlan_combo.ko \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/sprd_thermal.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/sprd_thermal.ko
 
 # Init configuration
 PRODUCT_COPY_FILES += \
