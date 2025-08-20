@@ -491,8 +491,17 @@ PRODUCT_COPY_FILES += \
 # =============================================
 
 # Kernel modules (bulk copy)
-#PRODUCT_COPY_FILES += \
-   # $(call find-copy-subdir-files,*.ko,vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+# Ensure shipping API level matches BOARD_SEPOLICY_VERS
+PRODUCT_SHIPPING_API_LEVEL := 33
+
+# Enforce VINTF manifest
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
+# Copy all DLKM kernel modules
+PRODUCT_COPY_FILES += \
+   $(call find-copy-subdir-files,*.ko,vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+
+   
 
 #PRODUCT_COPY_FILES += \
    #  vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/init/init.realme.rc:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init/init.realme.rc
