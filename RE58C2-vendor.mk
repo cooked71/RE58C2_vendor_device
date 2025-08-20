@@ -506,10 +506,11 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := false
    #  vendor/realme/RE58C2/proprietary/vendor_dlkm/etc/init/init.realme.rc:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init/init.realme.rc
    
 # Module metadata files
-PRODUCT_COPY_FILES += \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep \
-    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.softdep
+#PRODUCT_COPY_FILES += \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load \
+#    vendor/realme/RE58C2/proprietary/vendor_dlkm/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.softdep
 
 # Module loading configs
 PRODUCT_COPY_FILES += \
