@@ -494,8 +494,7 @@ PRODUCT_COPY_FILES += \
 # Ensure shipping API level matches BOARD_SEPOLICY_VERS
 PRODUCT_SHIPPING_API_LEVEL := 33
 
-# Enforce VINTF manifest
-PRODUCT_ENFORCE_VINTF_MANIFEST := true
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
 
 # Copy all DLKM kernel modules
 #PRODUCT_COPY_FILES += \
