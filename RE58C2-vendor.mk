@@ -550,10 +550,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
     $(call find-copy-subdir-files,*,vendor/realme/RE58C2/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
    
-#VINTF_FRAGMENTS := $(wildcard vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml)
+VINTF_FRAGMENTS := $(wildcard vendor/realme/RE58C2/proprietary/vendor-manifest/manifest/*.xml)
 
-#DEVICE_MANIFEST_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml
-#DEVICE_MATRIX_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/manifest.xml
+DEVICE_MATRIX_FILE := vendor/realme/RE58C2/proprietary/vendor-manifest/compatibility_matrix.xml
 
 
 
