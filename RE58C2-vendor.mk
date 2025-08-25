@@ -636,7 +636,7 @@ PRODUCT_PACKAGES += \
 # ========================
 # Modem/Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.default \
+    android.hardware.sensors-service.multihal \
     rild
 
 # ========================
